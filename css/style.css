@@ -1,0 +1,434 @@
+/* ===== Reset & Base ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-text: #2c2c2c;
+  --color-text-muted: #5a5a5a;
+  --color-primary: #2e6b3e;
+  --color-primary-light: #e8f2eb;
+  --color-border: #e0ddd8;
+  --color-accent: #d4a843;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --max-width: 1100px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-header p {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.site-header a {
+  color: #fff;
+}
+
+.site-header a:hover {
+  opacity: 0.8;
+}
+
+/* ===== Navigation ===== */
+.site-nav {
+  margin-top: 0.75rem;
+}
+
+.site-nav a {
+  color: #fff;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.site-nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ===== Main Content ===== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ===== Search Input ===== */
+.search-input {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-family: inherit;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(46, 107, 62, 0.15);
+}
+
+.search-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* ===== Filter Bar ===== */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  border-color: var(--color-border);
+}
+
+.filter-btn:hover {
+  border-color: var(--color-text-muted);
+}
+
+.filter-btn-alla.active {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.filter-btn-miljo { border-color: #dff0d8; }
+.filter-btn-miljo:hover { border-color: #2d6a1e; }
+.filter-btn-miljo.active { background: #2d6a1e; color: #fff; border-color: #2d6a1e; }
+
+.filter-btn-halsa { border-color: #d9edf7; }
+.filter-btn-halsa:hover { border-color: #1a5276; }
+.filter-btn-halsa.active { background: #1a5276; color: #fff; border-color: #1a5276; }
+
+.filter-btn-djurvalf { border-color: #fce8d5; }
+.filter-btn-djurvalf:hover { border-color: #8a4b1a; }
+.filter-btn-djurvalf.active { background: #8a4b1a; color: #fff; border-color: #8a4b1a; }
+
+.filter-btn-ursprung { border-color: #f5e6cc; }
+.filter-btn-ursprung:hover { border-color: #7d5a2f; }
+.filter-btn-ursprung.active { background: #7d5a2f; color: #fff; border-color: #7d5a2f; }
+
+.filter-btn-ekologiskt { border-color: #e8f2eb; }
+.filter-btn-ekologiskt:hover { border-color: #2e6b3e; }
+.filter-btn-ekologiskt.active { background: #2e6b3e; color: #fff; border-color: #2e6b3e; }
+
+.filter-btn-socialt-ansvar { border-color: #f0e0f0; }
+.filter-btn-socialt-ansvar:hover { border-color: #6b2e6b; }
+.filter-btn-socialt-ansvar.active { background: #6b2e6b; color: #fff; border-color: #6b2e6b; }
+
+.filter-btn-hav-fiske { border-color: #d6eaf8; }
+.filter-btn-hav-fiske:hover { border-color: #1a3d5c; }
+.filter-btn-hav-fiske.active { background: #1a3d5c; color: #fff; border-color: #1a3d5c; }
+
+.label-card.hidden {
+  display: none;
+}
+
+/* ===== Index: Label Cards Grid ===== */
+.label-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.label-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.label-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.label-card .card-image {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  background: var(--color-bg);
+}
+
+.label-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.label-card .tags {
+  margin-top: 1rem;
+}
+
+.label-card .card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ===== Tags / Badges ===== */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.tag-miljo {
+  background: #dff0d8;
+  color: #2d6a1e;
+}
+
+.tag-halsa {
+  background: #d9edf7;
+  color: #1a5276;
+}
+
+.tag-djurvalf {
+  background: #fce8d5;
+  color: #8a4b1a;
+}
+
+.tag-ursprung {
+  background: #f5e6cc;
+  color: #7d5a2f;
+}
+
+.tag-ekologiskt {
+  background: #e8f2eb;
+  color: #2e6b3e;
+}
+
+.tag-socialt-ansvar {
+  background: #f0e0f0;
+  color: #6b2e6b;
+}
+
+.tag-hav-fiske {
+  background: #d6eaf8;
+  color: #1a3d5c;
+}
+
+/* ===== Back Navigation ===== */
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.back-link::before {
+  content: "← ";
+}
+
+/* ===== Label Detail Page ===== */
+.label-header {
+  margin-bottom: 2rem;
+}
+
+.label-header h1 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.label-header .header-image {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+}
+
+.label-header .tags {
+  margin-top: 0.75rem;
+}
+
+.section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.section h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary-light);
+  padding-bottom: 0.4rem;
+}
+
+.section p,
+.section ul {
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.section ul {
+  padding-left: 1.4rem;
+}
+
+.section li {
+  margin-bottom: 0.35rem;
+}
+
+.section li:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+  margin-top: 2rem;
+}
+
+.site-footer p {
+  margin-bottom: 0.3rem;
+}
+
+.site-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== Intro text ===== */
+.intro {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* ===== About Page ===== */
+.about-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .label-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .label-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .label-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    padding: 1.25rem 0.75rem;
+  }
+}
