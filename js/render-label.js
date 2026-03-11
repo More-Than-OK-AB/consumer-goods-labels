@@ -101,11 +101,7 @@
 
   // Kommentarer
   if (label.notes && label.notes.items && label.notes.items.length > 0) {
-    var notesSection = LabelUtils.createSection("Kommentarer");
-    var nIntro = document.createElement("p");
-    nIntro.textContent = label.notes.intro;
-    notesSection.appendChild(nIntro);
-
+    var notesSection = LabelUtils.createSection("Övrigt");
     var nList = document.createElement("ul");
     label.notes.items.forEach(function (item) {
       var li = document.createElement("li");

@@ -56,7 +56,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Kommentarer om KRAV-märkningen:",
       items: [
         {
           label: "Nyckelhålet",
@@ -112,7 +111,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Kommentarer om Nyckelhålet:",
       items: [
         {
           label: "KRAV",
@@ -186,7 +184,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Svenskt Sigill har ett annat fokus än flera andra märkningar, vilket kan leda till skillnader:",
       items: [
         {
           label: "KRAV",
@@ -258,7 +255,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "EU-ekologiskt utgör miniminivån för ekologisk märkning inom EU, vilket skapar både överlapp och skillnader gentemot andra märkningar:",
       items: [
         {
           label: "KRAV",
@@ -320,7 +316,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Fairtrade fokuserar på rättvis handel och sociala villkor, vilket skiljer sig från flera andra märkningars inriktning:",
       items: [
         {
           label: "KRAV",
@@ -382,7 +377,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Svanen skiljer sig från de flesta andra märkningar på denna sida genom att inte omfatta livsmedel:",
       items: [
         {
           label: "Fairtrade",
@@ -436,7 +430,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Bra Miljöval har ett brett fokus på miljöfrågor men skiljer sig från andra märkningar i inriktning och produktområden:",
       items: [
         {
           label: "Svanen",
@@ -490,7 +483,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "MSC fokuserar uteslutande på vildfångad sjömat, vilket skapar tydliga gränser mot andra märkningar:",
       items: [
         {
           label: "KRAV",
@@ -560,7 +552,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "ASC fokuserar uteslutande på odlad fisk och skaldjur, vilket skapar tydliga avgränsningar mot andra märkningar:",
       items: [
         {
           label: "MSC",
@@ -618,7 +609,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Rainforest Alliance fokuserar på tropiskt jordbruk, vilket skapar tydliga skillnader mot märkningar med annan inriktning:",
       items: [
         {
           label: "KRAV",
@@ -674,7 +664,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Från Sverige fokuserar uteslutande på svenskt ursprung, utan krav på produktionsmetod, vilket skapar tydliga skillnader mot andra märkningar:",
       items: [
         {
           label: "KRAV",
@@ -736,7 +725,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "EU Ecolabel är EU:s motsvarighet till Svanen och verkar inom liknande produktområden, men med vissa skillnader:",
       items: [
         {
           label: "Svanen",
@@ -794,7 +782,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "FSC fokuserar på skogsbruk och skogsbaserade produkter, vilket skapar en tydlig avgränsning mot de flesta andra märkningar på denna sida:",
       items: [
         {
           label: "Svanen",
@@ -862,7 +849,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Demeter representerar den mest ambitiösa nivån av ekologisk produktion, vilket skapar en tydlig hierarki gentemot andra ekologiska märkningar:",
       items: [
         {
           label: "KRAV",
@@ -926,7 +912,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Svensk Fågel är en branschspecifik märkning för fjäderfä, vilket skiljer den från bredare livsmedels- och miljömärkningar:",
       items: [
         {
           label: "KRAV",
@@ -998,7 +983,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Svenska Ägg är en branschspecifik certifiering för ägg, vilket skiljer den från bredare märkningar:",
       items: [
         {
           label: "KRAV",
@@ -1054,7 +1038,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Astma- och Allergiförbundets märkning fokuserar på hälsa och överkänslighet, vilket skiljer den från miljö- och ursprungsmärkningar:",
       items: [
         {
           label: "EU-ekologiskt",
@@ -1102,7 +1085,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Äkta Vara fokuserar på råvarukvalitet och avsaknad av onödiga tillsatser, vilket skiljer den från andra märkningar:",
       items: [
         {
           label: "Nyckelhålet",
@@ -1158,7 +1140,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "PEFC fokuserar på skogsbruk och skogsbaserade produkter, vilket skapar tydliga jämförelser med andra miljömärkningar:",
       items: [
         {
           label: "FSC",
@@ -1214,7 +1195,6 @@ window.LABELS_DATA = [
       ]
     },
     notes: {
-      intro: "Överkorsade Axet fokuserar uteslutande på gluteninnehåll, vilket ger det en specifik och avgränsad roll gentemot andra märkningar:",
       items: [
         {
           label: "Nyckelhålet",
