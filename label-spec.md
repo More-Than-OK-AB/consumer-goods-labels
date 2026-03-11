@@ -32,5 +32,5 @@ How compliance is ensured:
 - Type of inspection (audit, spot checks, etc.)
 - Consequences for non-compliance
 
-## 5. Conflicts with other labels
-Direct conflicts or tensions with other labels featured on the site. Describe what differs and why they don't necessarily overlap.
+## 5. Notes
+Comparisons, consumer warnings, enforcement concerns, or other relevant caveats about the label in relation to others featured on the site. Only include entries that add genuine consumer insight — omit trivially obvious domain differences.

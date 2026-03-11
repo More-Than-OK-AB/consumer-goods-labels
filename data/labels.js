@@ -55,8 +55,8 @@ window.LABELS_DATA = [
         "KRAV uppdaterar sitt regelverk löpande och certifierade verksamheter måste följa de senaste reglerna."
       ]
     },
-    conflicts: {
-      intro: "KRAV-märkningen kan i vissa fall stå i konflikt med eller skilja sig från andra märkningar:",
+    notes: {
+      intro: "Kommentarer om KRAV-märkningen:",
       items: [
         {
           label: "Nyckelhålet",
@@ -111,8 +111,8 @@ window.LABELS_DATA = [
         "Producenten kan vid överträdelse föreläggas med vite."
       ]
     },
-    conflicts: {
-      intro: "Nyckelhålet fokuserar enbart på näringsinnehåll, vilket innebär att det kan finnas spänningar gentemot märkningar med annat fokus:",
+    notes: {
+      intro: "Kommentarer om Nyckelhålet:",
       items: [
         {
           label: "KRAV",
@@ -185,7 +185,7 @@ window.LABELS_DATA = [
         "Sigill Kvalitetssystem uppdaterar IP-standarden löpande och certifierade verksamheter måste följa den senaste versionen."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Svenskt Sigill har ett annat fokus än flera andra märkningar, vilket kan leda till skillnader:",
       items: [
         {
@@ -257,7 +257,7 @@ window.LABELS_DATA = [
         "Överträdelser av märkningsreglerna kan leda till sanktionsavgifter."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "EU-ekologiskt utgör miniminivån för ekologisk märkning inom EU, vilket skapar både överlapp och skillnader gentemot andra märkningar:",
       items: [
         {
@@ -319,7 +319,7 @@ window.LABELS_DATA = [
         "FLOCERT är ackrediterat enligt ISO 17065, den internationella standarden för certifieringsorgan."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Fairtrade fokuserar på rättvis handel och sociala villkor, vilket skiljer sig från flera andra märkningars inriktning:",
       items: [
         {
@@ -381,17 +381,9 @@ window.LABELS_DATA = [
         "Vid bristande efterlevnad kan licensen dras in. Obehörig användning av märket utreds och följs upp."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Svanen skiljer sig från de flesta andra märkningar på denna sida genom att inte omfatta livsmedel:",
       items: [
-        {
-          label: "KRAV",
-          text: "KRAV är en livsmedelsmärkning för ekologisk produktion, medan Svanen är en miljömärkning för icke-livsmedel. Märkningarna verkar inom helt olika produktkategorier och överlappar inte."
-        },
-        {
-          label: "EU-ekologiskt",
-          text: "EU-ekologiskt gäller ekologiska livsmedel och jordbruksprodukter. Svanen gäller konsumentvaror och tjänster utanför livsmedelssektorn. Ingen direkt överlapp finns."
-        },
         {
           label: "Fairtrade",
           text: "Fairtrade fokuserar på rättvisa handelsvillkor för råvaruproducenter i utvecklingsländer. Svanen fokuserar på miljöpåverkan genom livscykeln. De kan teoretiskt förekomma på samma produkt, till exempel textilier, men med olika fokusområden."
@@ -443,20 +435,12 @@ window.LABELS_DATA = [
         "Vid bristande efterlevnad kan licensen dras in och rätten att använda märket upphör."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Bra Miljöval har ett brett fokus på miljöfrågor men skiljer sig från andra märkningar i inriktning och produktområden:",
       items: [
         {
           label: "Svanen",
           text: "Både Bra Miljöval och Svanen är miljömärkningar för icke-livsmedel, men Bra Miljöval drivs av en miljöorganisation medan Svanen är en nordisk statlig märkning. Bra Miljöval anses ofta ha strängare kemikaliekrav. Produktområdena överlappar delvis men Bra Miljöval täcker även energi, transporter och försäkringar."
-        },
-        {
-          label: "KRAV",
-          text: "KRAV märker ekologiska livsmedel, medan Bra Miljöval inte är en livsmedelsmärkning. Bra Miljöval kan dock märka livsmedelsbutiker som uppfyller miljökrav i sin verksamhet."
-        },
-        {
-          label: "Fairtrade",
-          text: "Fairtrade fokuserar på rättvisa handelsvillkor i utvecklingsländer. Bra Miljöval fokuserar på miljöpåverkan i Sverige och Norden. Märkningarna har helt olika inriktning men kan komplettera varandra."
         }
       ]
     }
@@ -505,16 +489,12 @@ window.LABELS_DATA = [
         "Vid allvarliga brister kan certifikatet suspenderas eller dras in. Omcertifiering krävs inom fem år."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "MSC fokuserar uteslutande på vildfångad sjömat, vilket skapar tydliga gränser mot andra märkningar:",
       items: [
         {
           label: "KRAV",
           text: "KRAV kan certifiera fisk men med fokus på ekologisk produktion och odlad fisk. MSC certifierar enbart vildfångad sjömat utifrån hållbarhetskriterier. KRAV-märkt fisk och MSC-märkt fisk bedöms utifrån olika principer."
-        },
-        {
-          label: "Svenskt Sigill",
-          text: "Svenskt Sigill fokuserar på svenskt ursprung inom jordbruk och livsmedel men omfattar inte vildfångad fisk på samma sätt. MSC är en global märkning utan krav på ursprungsland."
         },
         {
           label: "Nyckelhålet",
@@ -579,7 +559,7 @@ window.LABELS_DATA = [
         "Omcertifiering krävs efter tre år med en ny fullständig bedömning."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "ASC fokuserar uteslutande på odlad fisk och skaldjur, vilket skapar tydliga avgränsningar mot andra märkningar:",
       items: [
         {
@@ -589,10 +569,6 @@ window.LABELS_DATA = [
         {
           label: "KRAV",
           text: "KRAV kan certifiera odlad fisk enligt ekologiska principer med fokus på ekologiskt foder och naturliga förhållanden. ASC ställer inte krav på ekologisk produktion men har breda krav på miljö, djurvälfärd och socialt ansvar. Certifieringarna överlappar delvis men har olika utgångspunkter."
-        },
-        {
-          label: "Svenskt Sigill",
-          text: "Svenskt Sigill garanterar svenskt ursprung inom jordbruk men omfattar inte vattenbruk i samma utsträckning. ASC är en global märkning utan krav på ursprungsland."
         }
       ]
     }
@@ -641,7 +617,7 @@ window.LABELS_DATA = [
         "Vid bristande efterlevnad kan certifikatet suspenderas eller dras in. Jordbrukaren ges möjlighet att åtgärda avvikelser innan slutgiltigt beslut."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Rainforest Alliance fokuserar på tropiskt jordbruk, vilket skapar tydliga skillnader mot märkningar med annan inriktning:",
       items: [
         {
@@ -697,7 +673,7 @@ window.LABELS_DATA = [
         "Vid felaktig användning av märket kan avtalet sägas upp och rätten att använda märkningen upphör."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Från Sverige fokuserar uteslutande på svenskt ursprung, utan krav på produktionsmetod, vilket skapar tydliga skillnader mot andra märkningar:",
       items: [
         {
@@ -759,7 +735,7 @@ window.LABELS_DATA = [
         "Vid bristande efterlevnad kan rätten att använda EU Ecolabel-märkningen återkallas."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "EU Ecolabel är EU:s motsvarighet till Svanen och verkar inom liknande produktområden, men med vissa skillnader:",
       items: [
         {
@@ -769,10 +745,6 @@ window.LABELS_DATA = [
         {
           label: "Bra Miljöval",
           text: "Bra Miljöval drivs av Naturskyddsföreningen och täcker delvis andra produktområden som energi, transporter och försäkringar. EU Ecolabel har ett bredare produktsortiment inom konsumentvaror men saknar Bra Miljövals fokus på tjänstesektorn."
-        },
-        {
-          label: "KRAV",
-          text: "KRAV är en livsmedelsmärkning för ekologisk produktion. EU Ecolabel gäller inte livsmedel utan konsumentvaror och tjänster. Märkningarna verkar inom helt skilda produktområden."
         }
       ]
     }
@@ -821,7 +793,7 @@ window.LABELS_DATA = [
         "Vid avvikelser ska bristerna åtgärdas inom angiven tidsram. Allvarliga överträdelser kan leda till att certifikatet suspenderas eller dras in. Obehörig användning av FSC:s varumärke utreds och beivras."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "FSC fokuserar på skogsbruk och skogsbaserade produkter, vilket skapar en tydlig avgränsning mot de flesta andra märkningar på denna sida:",
       items: [
         {
@@ -889,7 +861,7 @@ window.LABELS_DATA = [
         "Vid bristande efterlevnad av Demeterreglerna kan certifikatet dras in. Gården behåller sin ekologiska certifiering men förlorar rätten att använda Demetervärnamärket."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Demeter representerar den mest ambitiösa nivån av ekologisk produktion, vilket skapar en tydlig hierarki gentemot andra ekologiska märkningar:",
       items: [
         {
@@ -899,10 +871,6 @@ window.LABELS_DATA = [
         {
           label: "EU-ekologiskt",
           text: "EU-ekologiskt är miniminivån för ekologisk produktion. Demeter uppfyller alla EU-krav men ställer väsentligt högre krav. En Demetercertifierad produkt bär alltid även EU-lövet."
-        },
-        {
-          label: "Svenskt Sigill",
-          text: "Svenskt Sigill fokuserar på svenskt ursprung och konventionell produktion med miljökrav. Demeter kräver biodynamisk produktion men ställer inga krav på svenskt ursprung. Märkningarna har helt olika utgångspunkter."
         }
       ]
     }
@@ -957,7 +925,7 @@ window.LABELS_DATA = [
         "Vid bristande efterlevnad kan medlemskapet och rätten att använda den Gula Pippin dras in."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Svensk Fågel är en branschspecifik märkning för fjäderfä, vilket skiljer den från bredare livsmedels- och miljömärkningar:",
       items: [
         {
@@ -1029,7 +997,7 @@ window.LABELS_DATA = [
         "Smittskyddsprogrammet säkerställer hälsokontroll i hönsbesättningar."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Svenska Ägg är en branschspecifik certifiering för ägg, vilket skiljer den från bredare märkningar:",
       items: [
         {
@@ -1085,17 +1053,9 @@ window.LABELS_DATA = [
         "Vid brister eller ändrad sammansättning kan märkningsrätten återkallas."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Astma- och Allergiförbundets märkning fokuserar på hälsa och överkänslighet, vilket skiljer den från miljö- och ursprungsmärkningar:",
       items: [
-        {
-          label: "KRAV",
-          text: "KRAV fokuserar på ekologisk produktion och miljö. En KRAV-märkt produkt kan innehålla naturliga ämnen som vissa personer reagerar på. Astma- och Allergiförbundets märkning garanterar inte ekologisk produktion."
-        },
-        {
-          label: "Svanen",
-          text: "Svanen är en miljömärkning med fokus på minskad miljöpåverkan. Även om Svanen ställer krav på kemikalieinnehåll är kriterierna olika från Astma- och Allergiförbundets fokus på allergi och överkänslighet."
-        },
         {
           label: "EU-ekologiskt",
           text: "Ekologiska produkter kan innehålla naturliga allergener. Astma- och Allergiförbundets märkning testar specifikt för att minimera risk för allergiska reaktioner, oavsett om produkten är ekologisk eller konventionell."
@@ -1141,7 +1101,7 @@ window.LABELS_DATA = [
         "Föreningen bevakar löpande livsmedelsbranschens produkter och uppmärksammar vilseledande marknadsföring genom kampanjen Årets Matbluff."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Äkta Vara fokuserar på råvarukvalitet och avsaknad av onödiga tillsatser, vilket skiljer den från andra märkningar:",
       items: [
         {
@@ -1197,7 +1157,7 @@ window.LABELS_DATA = [
         "Vid avvikelser ska bristerna åtgärdas inom angiven tidsram. Allvarliga överträdelser kan leda till att certifikatet suspenderas eller dras in."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "PEFC fokuserar på skogsbruk och skogsbaserade produkter, vilket skapar tydliga jämförelser med andra miljömärkningar:",
       items: [
         {
@@ -1253,20 +1213,12 @@ window.LABELS_DATA = [
         "Celiakiförbundet kontrollerar löpande märkta produkter för att säkerställa att de inte överskrider tillåtna gränsvärden."
       ]
     },
-    conflicts: {
+    notes: {
       intro: "Överkorsade Axet fokuserar uteslutande på gluteninnehåll, vilket ger det en specifik och avgränsad roll gentemot andra märkningar:",
       items: [
         {
           label: "Nyckelhålet",
           text: "Nyckelhålet fokuserar på näringsinnehåll som fett, socker, salt och fiber. Överkorsade Axet garanterar låg glutenhalt. En glutenfri produkt uppfyller inte automatiskt Nyckelhålets krav, och en Nyckelhålsmärkt produkt kan innehålla gluten. Märkningarna kan kombineras."
-        },
-        {
-          label: "KRAV",
-          text: "KRAV certifierar ekologisk produktion men tar inte ställning till gluteninnehåll – ekologiska veteprodukter innehåller gluten. Överkorsade Axet ställer inga krav på odlingsmetod. Märkningarna kan kombineras på produkter som är både ekologiska och verifierat glutenfria."
-        },
-        {
-          label: "Astma- och Allergiförbundet",
-          text: "Båda märkningarna riktar sig till personer med överkänslighet men för helt olika tillstånd och produkttyper. Överkorsade Axet gäller enbart livsmedel och celiaki, medan Astma- och Allergiförbundets märkning främst gäller icke-livsmedel som rengöringsprodukter och kosmetika."
         }
       ]
     }

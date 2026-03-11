@@ -99,21 +99,23 @@
     LabelUtils.createListSection("Kontroll & uppf\u00f6ljning", label.oversight)
   );
 
-  // Konflikter med andra märkningar
-  var conflictSection = LabelUtils.createSection("Konflikter med andra m\u00e4rkningar");
-  var cIntro = document.createElement("p");
-  cIntro.textContent = label.conflicts.intro;
-  conflictSection.appendChild(cIntro);
+  // Kommentarer
+  if (label.notes && label.notes.items && label.notes.items.length > 0) {
+    var notesSection = LabelUtils.createSection("Kommentarer");
+    var nIntro = document.createElement("p");
+    nIntro.textContent = label.notes.intro;
+    notesSection.appendChild(nIntro);
 
-  var cList = document.createElement("ul");
-  label.conflicts.items.forEach(function (item) {
-    var li = document.createElement("li");
-    var strong = document.createElement("strong");
-    strong.textContent = item.label;
-    li.appendChild(strong);
-    li.appendChild(document.createTextNode(" \u2013 " + item.text));
-    cList.appendChild(li);
-  });
-  conflictSection.appendChild(cList);
-  container.appendChild(conflictSection);
+    var nList = document.createElement("ul");
+    label.notes.items.forEach(function (item) {
+      var li = document.createElement("li");
+      var strong = document.createElement("strong");
+      strong.textContent = item.label;
+      li.appendChild(strong);
+      li.appendChild(document.createTextNode(" \u2013 " + item.text));
+      nList.appendChild(li);
+    });
+    notesSection.appendChild(nList);
+    container.appendChild(notesSection);
+  }
 })();
