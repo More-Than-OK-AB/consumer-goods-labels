@@ -219,7 +219,7 @@ a:hover {
   object-fit: contain;
   margin-bottom: 1rem;
   border-radius: var(--radius);
-  background: var(--color-bg);
+  background: var(--color-surface);
 }
 
 .label-card p {
