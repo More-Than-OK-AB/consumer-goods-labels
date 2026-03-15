@@ -56,12 +56,6 @@ var LabelUtils = {
   },
 
   /**
-   * Create tags HTML elements
-   * @param {Array} tags - Array of tag objects
-   * @param {boolean} showOnlyOnCard - If true, only show tags where showOnCard is true
-   * @returns {HTMLElement} The tags container div
-   */
-  /**
    * Walk the rendered container and link the first occurrence of each cross-linked
    * label name in regular body text (skips headings, bold and existing links).
    * @param {HTMLElement} container
@@ -110,6 +104,12 @@ var LabelUtils = {
     walk(container);
   },
 
+  /**
+   * Create tags HTML elements
+   * @param {Array} tags - Array of tag objects
+   * @param {boolean} showOnlyOnCard - If true, only show tags where showOnCard is true
+   * @returns {HTMLElement} The tags container div
+   */
   createTags: function (tags, showOnlyOnCard) {
     var tagsDiv = document.createElement("div");
     tagsDiv.className = "tags";

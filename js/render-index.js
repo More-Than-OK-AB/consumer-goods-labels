@@ -77,9 +77,7 @@
 
   // Search input handler
   if (searchInput) {
-    searchInput.addEventListener("input", function () {
-      updateFilters();
-    });
+    searchInput.addEventListener("input", updateFilters);
   }
 
   function updateFilters() {
