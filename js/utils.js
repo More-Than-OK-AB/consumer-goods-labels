@@ -92,7 +92,7 @@ var LabelUtils = {
         var parent = node.parentNode;
         var before = document.createTextNode(text.substring(0, idx));
         var a = document.createElement("a");
-        a.href = "label.html?id=" + id;
+        a.href = "label?id=" + id;
         a.textContent = name;
         var after = document.createTextNode(text.substring(idx + name.length));
         parent.insertBefore(before, node);
