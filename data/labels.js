@@ -70,7 +70,12 @@ window.LABELS_DATA = [
           text: "Fokuserar på svensk råvara och grundcertifiering snarare än ekologisk produktion. Kan kombineras med KRAV men har delvis annorlunda fokus."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "Nyckelhålet", id: "nyckelhalet" },
+      { name: "EU-ekologiskt", id: "eu-ekologiskt" },
+      { name: "Svenskt Sigill", id: "svenskt-sigill" }
+    ]
   },
   {
     id: "nyckelhalet",
@@ -125,7 +130,12 @@ window.LABELS_DATA = [
           text: "Samma resonemang som för KRAV. Ekologiskt och nyttigt är två olika dimensioner som inte nödvändigtvis överlappar."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "Svenskt Sigill", id: "svenskt-sigill" },
+      { name: "EU-ekologiskt", id: "eu-ekologiskt" }
+    ]
   },
   {
     id: "svenskt-sigill",
@@ -202,7 +212,13 @@ window.LABELS_DATA = [
           text: "Från Sverige garanterar enbart svenskt ursprung utan krav på specifika produktionsmetoder. Svenskt Sigill garanterar också svenskt ursprung men ställer dessutom krav på miljöansvar, djurvälfärd och livsmedelssäkerhet genom IP-standarden."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "Nyckelhålet", id: "nyckelhalet" },
+      { name: "EU-ekologiskt", id: "eu-ekologiskt" },
+      { name: "Från Sverige", id: "fran-sverige" }
+    ]
   },
   {
     id: "eu-ekologiskt",
@@ -269,7 +285,12 @@ window.LABELS_DATA = [
           text: "Svenskt Sigill fokuserar på svenskt ursprung och tillåter konventionell produktion. EU-ekologiskt ställer inga krav på ursprungsland men kräver ekologisk produktion. Märkningarna har helt olika fokus."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "Nyckelhålet", id: "nyckelhalet" },
+      { name: "Svenskt Sigill", id: "svenskt-sigill" }
+    ]
   },
   {
     id: "fairtrade",
@@ -330,7 +351,12 @@ window.LABELS_DATA = [
           text: "Svenskt Sigill garanterar svenskt ursprung, medan Fairtrade per definition gäller råvaror från utvecklingsländer. Märkningarna kan inte förekomma på samma råvara."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "EU-ekologiskt", id: "eu-ekologiskt" },
+      { name: "Svenskt Sigill", id: "svenskt-sigill" }
+    ]
   },
   {
     id: "svanen",
@@ -383,7 +409,10 @@ window.LABELS_DATA = [
           text: "Fairtrade fokuserar på rättvisa handelsvillkor för råvaruproducenter i utvecklingsländer. Svanen fokuserar på miljöpåverkan genom livscykeln. De kan teoretiskt förekomma på samma produkt, till exempel textilier, men med olika fokusområden."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "Fairtrade", id: "fairtrade" }
+    ]
   },
   {
     id: "bra-miljoval",
@@ -436,7 +465,10 @@ window.LABELS_DATA = [
           text: "Både Bra Miljöval och Svanen är miljömärkningar för icke-livsmedel, men Bra Miljöval drivs av en miljöorganisation medan Svanen är en nordisk statlig märkning. Bra Miljöval anses ofta ha strängare kemikaliekrav. Produktområdena överlappar delvis men Bra Miljöval täcker även energi, transporter och försäkringar."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "Svanen", id: "svanen" }
+    ]
   },
   {
     id: "msc",
@@ -493,7 +525,11 @@ window.LABELS_DATA = [
           text: "Nyckelhålet bedömer näringsinnehåll medan MSC bedömer fiskemetodernas hållbarhet. En MSC-märkt fiskprodukt kan samtidigt vara Nyckelhålsmärkt om den uppfyller näringskraven – märkningarna kompletterar varandra."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "Nyckelhålet", id: "nyckelhalet" }
+    ]
   },
   {
     id: "asc",
@@ -562,7 +598,11 @@ window.LABELS_DATA = [
           text: "KRAV kan certifiera odlad fisk enligt ekologiska principer med fokus på ekologiskt foder och naturliga förhållanden. ASC ställer inte krav på ekologisk produktion men har breda krav på miljö, djurvälfärd och socialt ansvar. Certifieringarna överlappar delvis men har olika utgångspunkter."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "MSC", id: "msc" },
+      { name: "KRAV", id: "krav" }
+    ]
   },
   {
     id: "rainforest-alliance",
@@ -623,7 +663,12 @@ window.LABELS_DATA = [
           text: "EU-ekologiskt kräver strikt ekologisk produktion utan syntetiska bekämpningsmedel och konstgödsel. Rainforest Alliance är inte en ekologisk certifiering men ställer krav på minskad kemikalieanvändning och hållbar markanvändning."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "Fairtrade", id: "fairtrade" },
+      { name: "EU-ekologiskt", id: "eu-ekologiskt" }
+    ]
   },
   {
     id: "fran-sverige",
@@ -678,7 +723,12 @@ window.LABELS_DATA = [
           text: "EU-ekologiskt kräver ekologisk produktion men kan gälla produkter från vilket EU-land som helst. Från Sverige garanterar svenskt ursprung men ställer inga krav på ekologisk produktion. En produkt kan bära båda märkningarna om den uppfyller kraven för var och en."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "Svenskt Sigill", id: "svenskt-sigill" },
+      { name: "EU-ekologiskt", id: "eu-ekologiskt" }
+    ]
   },
   {
     id: "eu-ecolabel",
@@ -735,7 +785,11 @@ window.LABELS_DATA = [
           text: "Bra Miljöval drivs av Naturskyddsföreningen och täcker delvis andra produktområden som energi, transporter och försäkringar. EU Ecolabel har ett bredare produktsortiment inom konsumentvaror men saknar Bra Miljövals fokus på tjänstesektorn."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "Svanen", id: "svanen" },
+      { name: "Bra Miljöval", id: "bra-miljoval" }
+    ]
   },
   {
     id: "fsc",
@@ -796,7 +850,12 @@ window.LABELS_DATA = [
           text: "Bra Miljöval kan ställa krav på att papper och skogsprodukter kommer från hållbart skogsbruk. FSC är det specifika certifieringssystemet för själva skogsbruket. Bra Miljöval kan referera till FSC-certifiering som en del av sina kriterier."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "Svanen", id: "svanen" },
+      { name: "EU Ecolabel", id: "eu-ecolabel" },
+      { name: "Bra Miljöval", id: "bra-miljoval" }
+    ]
   },
   {
     id: "demeter",
@@ -859,7 +918,11 @@ window.LABELS_DATA = [
           text: "EU-ekologiskt är miniminivån för ekologisk produktion. Demeter uppfyller alla EU-krav men ställer väsentligt högre krav. En Demetercertifierad produkt bär alltid även EU-lövet."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "EU-ekologiskt", id: "eu-ekologiskt" }
+    ]
   },
   {
     id: "svensk-fagel",
@@ -926,7 +989,12 @@ window.LABELS_DATA = [
           text: "Svenskt Sigill kan certifiera kyckling och ägg med krav på miljö, djurvälfärd och livsmedelssäkerhet. Svensk Fågel är branschens eget program med egna kontrollpunkter. Märkningarna kan förekomma parallellt."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "Från Sverige", id: "fran-sverige" },
+      { name: "Svenskt Sigill", id: "svenskt-sigill" }
+    ]
   },
   {
     id: "svenska-agg",
@@ -997,7 +1065,12 @@ window.LABELS_DATA = [
           text: "Svensk Fågel är motsvarande branschcertifiering för kyckling och kalkon. Båda märkningarna garanterar svenskt ursprung och branschens egna kvalitetsprogram, men för olika djurslag."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "KRAV", id: "krav" },
+      { name: "Från Sverige", id: "fran-sverige" },
+      { name: "Svensk Fågel", id: "svensk-fagel" }
+    ]
   },
   {
     id: "astma-allergiforbundet",
@@ -1044,7 +1117,10 @@ window.LABELS_DATA = [
           text: "Ekologiska produkter kan innehålla naturliga allergener. Astma- och Allergiförbundets märkning testar specifikt för att minimera risk för allergiska reaktioner, oavsett om produkten är ekologisk eller konventionell."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "EU-ekologiskt", id: "eu-ekologiskt" }
+    ]
   },
   {
     id: "akta-vara",
@@ -1099,7 +1175,12 @@ window.LABELS_DATA = [
           text: "EU-ekologiskt certifierar att råvarorna är ekologiskt producerade men reglerar inte andelen riktiga råvaror i produkten. Äkta Vara kräver hög råvaruhalt men ställer inga krav på ekologisk produktion."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "Nyckelhålet", id: "nyckelhalet" },
+      { name: "KRAV", id: "krav" },
+      { name: "EU-ekologiskt", id: "eu-ekologiskt" }
+    ]
   },
   {
     id: "pefc",
@@ -1154,7 +1235,12 @@ window.LABELS_DATA = [
           text: "EU Ecolabel granskar produkters totala miljöpåverkan medan PEFC specifikt garanterar hållbart skogsbruk. Båda kan förekomma på samma produkt, exempelvis papper eller hygienartiklar."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "FSC", id: "fsc" },
+      { name: "Svanen", id: "svanen" },
+      { name: "EU Ecolabel", id: "eu-ecolabel" }
+    ]
   },
   {
     id: "overkorsade-axet",
@@ -1201,6 +1287,9 @@ window.LABELS_DATA = [
           text: "Nyckelhålet fokuserar på näringsinnehåll som fett, socker, salt och fiber. Överkorsade Axet garanterar låg glutenhalt. En glutenfri produkt uppfyller inte automatiskt Nyckelhålets krav, och en Nyckelhålsmärkt produkt kan innehålla gluten. Märkningarna kan kombineras."
         }
       ]
-    }
+    },
+    crossLinks: [
+      { name: "Nyckelhålet", id: "nyckelhalet" }
+    ]
   }
 ];

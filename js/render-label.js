@@ -46,9 +46,16 @@
   header.appendChild(headerTags);
   container.appendChild(header);
 
-  // Website link
+  // Beskrivning
+  var descSection = LabelUtils.createSection("Beskrivning");
+  label.description.forEach(function (text) {
+    var p = document.createElement("p");
+    p.textContent = text;
+    descSection.appendChild(p);
+  });
   if (label.website) {
-    var websiteSection = LabelUtils.createSection("Läs mer på märkningens webbplats");
+    var readMoreP = document.createElement("p");
+    readMoreP.appendChild(document.createTextNode("Läs mer om märkningen här: "));
     var websiteLink = document.createElement("a");
     websiteLink.href = label.website;
     try {
@@ -58,17 +65,9 @@
     }
     websiteLink.target = "_blank";
     websiteLink.rel = "noopener noreferrer";
-    websiteSection.appendChild(websiteLink);
-    container.appendChild(websiteSection);
+    readMoreP.appendChild(websiteLink);
+    descSection.appendChild(readMoreP);
   }
-
-  // Kort beskrivning
-  var descSection = LabelUtils.createSection("Kort beskrivning");
-  label.description.forEach(function (text) {
-    var p = document.createElement("p");
-    p.textContent = text;
-    descSection.appendChild(p);
-  });
   container.appendChild(descSection);
 
   // Taggar - show all tags
@@ -99,7 +98,7 @@
     LabelUtils.createListSection("Kontroll & uppf\u00f6ljning", label.oversight)
   );
 
-  // Kommentarer
+  // Övrigt / Kommentarer
   if (label.notes && label.notes.items && label.notes.items.length > 0) {
     var notesSection = LabelUtils.createSection("Övrigt");
     var nList = document.createElement("ul");
@@ -113,5 +112,10 @@
     });
     notesSection.appendChild(nList);
     container.appendChild(notesSection);
+  }
+
+  // Cross-link first mentions of referenced labels in body text
+  if (label.crossLinks) {
+    LabelUtils.addCrossLinks(container, label.crossLinks);
   }
 })();

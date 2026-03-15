@@ -4,18 +4,19 @@ Each label page should contain the following sections:
 
 ## 1. Short description
 What the label is, its purpose, and which product categories it covers.
+A link to the official website for the label.
 
 ## 2. Tags
 One or more of the following categories that the label relates to:
-- Organic
-- Environment
-- Health
-- Animal welfare
-- Origin
-- Social responsibility
-- Ocean & fishing
+- Organic (Ekologiskt)
+- Environment (Miljö)
+- Health (Hälsa)
+- Animal welfare (Djurvälfärd)
+- Origin (Ursprung)
+- Social responsibility (Socialt ansvar)
+- Ocean & fishing (Hav & fiske)
 
-Each tag should have a brief explanation of how it relates to this specific label.
+Each tag should have a very brief explanation of how it relates to this specific label.
 
 ## 3. Certification process
 How a producer gets to use the label:
@@ -33,4 +34,6 @@ How compliance is ensured:
 - Consequences for non-compliance
 
 ## 5. Notes
-Comparisons, consumer warnings, enforcement concerns, or other relevant caveats about the label in relation to others featured on the site. Only include entries that add genuine consumer insight — omit trivially obvious domain differences.
+Comparisons, consumer warnings, enforcement concerns, or other relevant caveats about the label in relation to others featured on the site.
+Only include entries that add genuine consumer insight — omit trivially obvious domain differences.
+If there has been significant news coverage about the label or oversight which haven't worked as expected, include a brief note about that as well.

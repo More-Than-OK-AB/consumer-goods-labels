@@ -61,6 +61,55 @@ var LabelUtils = {
    * @param {boolean} showOnlyOnCard - If true, only show tags where showOnCard is true
    * @returns {HTMLElement} The tags container div
    */
+  /**
+   * Walk the rendered container and link the first occurrence of each cross-linked
+   * label name in regular body text (skips headings, bold and existing links).
+   * @param {HTMLElement} container
+   * @param {Array} crossLinks - Array of {name, id} objects
+   */
+  addCrossLinks: function (container, crossLinks) {
+    if (!crossLinks || crossLinks.length === 0) return;
+    var self = this;
+    crossLinks.forEach(function (link) {
+      self._addSingleCrossLink(container, link.name, link.id);
+    });
+  },
+
+  _addSingleCrossLink: function (container, name, id) {
+    function walk(node) {
+      if (
+        node.nodeName === "A" ||
+        node.nodeName === "STRONG" ||
+        node.nodeName === "H1" ||
+        node.nodeName === "H2"
+      ) {
+        return false;
+      }
+      if (node.nodeType === 3) {
+        var text = node.nodeValue;
+        var idx = text.indexOf(name);
+        if (idx === -1) return false;
+        var parent = node.parentNode;
+        var before = document.createTextNode(text.substring(0, idx));
+        var a = document.createElement("a");
+        a.href = "label.html?id=" + id;
+        a.textContent = name;
+        var after = document.createTextNode(text.substring(idx + name.length));
+        parent.insertBefore(before, node);
+        parent.insertBefore(a, node);
+        parent.insertBefore(after, node);
+        parent.removeChild(node);
+        return true;
+      }
+      var children = Array.prototype.slice.call(node.childNodes);
+      for (var i = 0; i < children.length; i++) {
+        if (walk(children[i])) return true;
+      }
+      return false;
+    }
+    walk(container);
+  },
+
   createTags: function (tags, showOnlyOnCard) {
     var tagsDiv = document.createElement("div");
     tagsDiv.className = "tags";
