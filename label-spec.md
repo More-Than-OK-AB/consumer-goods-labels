@@ -37,3 +37,7 @@ How compliance is ensured:
 Comparisons, consumer warnings, enforcement concerns, or other relevant caveats about the label in relation to others featured on the site.
 Only include entries that add genuine consumer insight — omit trivially obvious domain differences.
 If there has been significant news coverage about the label or oversight which haven't worked as expected, include a brief note about that as well.
+Every note must have a **label** (bold heading) and **text**. For comparisons, use the other label's name as heading. For standalone notes, use a short descriptive heading (e.g. "Regelskärpning 2026").
+
+## 6. Data format
+See `data/labels/_template.js` for the exact JS object structure expected per label.
