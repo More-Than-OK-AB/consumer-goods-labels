@@ -21,27 +21,27 @@ window.LABELS_DATA.push({
     "Certifieringen omfattar framför allt kaffe, te, kakao, bananer och andra tropiska grödor. Den gröna grodan – en rödögd trädgroda – är märkningens symbol och valdes för att den fungerar som en bioindikator: friska grodpopulationer signalerar friska ekosystem. Standarden ställer krav på miljöskydd, hållbara jordbruksmetoder, rättvisa arbetsvillkor och ekonomisk motståndskraft."
   ],
   credibility: {
-    summary: "Certifieras av oberoende, auktoriserade certifieringsorgan med årliga revisioner och fullständig omcertifiering vart tredje år. Geolokalisering av gårdar krävs för att motverka avskogning."
+    summary: "Certifieras av oberoende, auktoriserade certifieringsorgan. Geolokalisering av gårdar krävs för att motverka avskogning.",
+    items: [
+      {
+        label: "Revisionsfrekvens",
+        text: "Gårdar som bedöms som medel- eller högrisk får fysiska revisioner, men dessa kan ske så sällan som vart tredje år. Under 2021–2022 tilläts samtliga revisioner genomföras på distans utan inspektör på plats."
+      }
+    ]
   },
   notes: {
     items: [
       {
-        label: "KRAV",
-        text: "KRAV kräver ekologisk produktion utan kemiska bekämpningsmedel. Rainforest Alliance tillåter kontrollerad användning av bekämpningsmedel men ställer krav på att minska användningen. Rainforest Alliance fokuserar på tropiska grödor medan KRAV främst gäller svenska och europeiska produkter."
-      },
-      {
         label: "Fairtrade",
-        text: "Båda märkningarna verkar i utvecklingsländer men med olika tyngdpunkt. Fairtrade fokuserar på garanterat minimipris och premie, medan Rainforest Alliance fokuserar mer på hållbara jordbruksmetoder och miljöskydd. Märkningarna kan förekomma på samma typ av produkter, som kaffe och kakao."
+        text: "Båda märkningarna finns på kaffe, kakao och te, men Fairtrade garanterar ett minimipris som golv för odlaren. Rainforest Alliance har ingen motsvarande prisgaranti — den så kallade Sustainability Differential motsvarade 2024 under en procent av världsmarknadspriset för kakao."
       },
       {
-        label: "EU-ekologiskt",
-        text: "EU-ekologiskt kräver strikt ekologisk produktion utan syntetiska bekämpningsmedel och konstgödsel. Rainforest Alliance är inte en ekologisk certifiering men ställer krav på minskad kemikalieanvändning och hållbar markanvändning."
+        label: "UTZ-sammanslagning",
+        text: "Rainforest Alliance och UTZ gick samman i januari 2018. Det gamla UTZ-märket fasas ut men kan fortfarande förekomma på äldre förpackningar. Sedan 2020 gäller en gemensam standard."
       }
     ]
   },
   crossLinks: [
-    { name: "KRAV", id: "krav" },
-    { name: "Fairtrade", id: "fairtrade" },
-    { name: "EU-ekologiskt", id: "eu-ekologiskt" }
+    { name: "Fairtrade", id: "fairtrade" }
   ]
 });
