@@ -32,22 +32,14 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
-        label: "KRAV",
-        text: "KRAV fokuserar på ekologisk produktion medan Fairtrade fokuserar på rättvisa handelsvillkor. En Fairtrade-märkt produkt är inte nödvändigtvis ekologisk, och en KRAV-märkt produkt garanterar inte rättvisa handelsvillkor. Båda märkningarna har dock miljökrav och kan kombineras."
+        label: "Minimipris och levnadsinkomst",
+        text: "Fairtrades minimipris garanterar ett golv som täcker produktionskostnaderna, men räcker ofta inte till en levnadsinkomst. Fairtrade har själva erkänt detta gap och infört så kallade Living Income Reference Prices för att adressera det — men dessa är ännu inte bindande för alla produkter."
       },
       {
-        label: "EU-ekologiskt",
-        text: "EU-ekologiskt reglerar produktionsmetod och förbjuder kemiska bekämpningsmedel. Fairtrade ställer miljökrav men tillåter konventionell odling. Fokus ligger på helt olika dimensioner – produktionsmetod respektive handelsvillkor."
-      },
-      {
-        label: "Svenskt Sigill",
-        text: "Svenskt Sigill garanterar svenskt ursprung, medan Fairtrade per definition gäller råvaror från utvecklingsländer. Märkningarna kan inte förekomma på samma råvara."
+        label: "Fairtrade-ingrediensmärket",
+        text: "Förutom det vanliga svarta Fairtrade-märket finns ett vitt ingrediensmärke. Det betyder att bara den namngivna ingrediensen (t.ex. kakao) är Fairtrade-certifierad — inte hela produkten. Miniminivån för Fairtrade-innehåll i en produkt med det svarta märket är 20 procent."
       }
     ]
   },
-  crossLinks: [
-    { name: "KRAV", id: "krav" },
-    { name: "EU-ekologiskt", id: "eu-ekologiskt" },
-    { name: "Svenskt Sigill", id: "svenskt-sigill" }
-  ]
+  crossLinks: []
 });
