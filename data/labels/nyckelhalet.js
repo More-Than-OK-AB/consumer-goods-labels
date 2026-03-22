@@ -2,7 +2,7 @@ window.LABELS_DATA.push({
   id: "nyckelhalet",
   name: "Nyckelhålet",
   image: "images/nyckelhalet.png",
-  website: "https://www.livsmedelsverket.se/matvanor-halsa-miljo/markning-av-mat/nyckelhalet",
+  website: "https://www.livsmedelsverket.se/matvanor-halsa--miljo/nyckelhalet/",
   tags: [
     {
       id: "halsa",
@@ -28,16 +28,8 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
-        label: "KRAV",
-        text: "Nyckelhålet säger inget om hur livsmedlet är producerat. En Nyckelhålsmärkt produkt kan vara konventionellt odlad med kemiska bekämpningsmedel. Omvänt kan en KRAV-märkt produkt ha för högt fett- eller sockerinnehåll för att kvalificera sig för Nyckelhålet."
-      },
-      {
-        label: "Svenskt Sigill",
-        text: "Svenskt Sigill fokuserar på svenskt ursprung och grundcertifiering. Nyckelhålet tar inte hänsyn till var råvaran kommer ifrån."
-      },
-      {
-        label: "EU-ekologiskt",
-        text: "Samma resonemang som för KRAV. Ekologiskt och nyttigt är två olika dimensioner som inte nödvändigtvis överlappar."
+        label: "Jämförelse inom kategori",
+        text: "Nyckelhålet jämför bara inom samma produktgrupp. En Nyckelhålsmärkt ketchup har till exempel mindre socker och salt än annan ketchup — men det betyder inte att den är nyttig i absolut mening. Märkningen hjälper dig att välja det bättre alternativet inom en viss typ av livsmedel, inte att bedöma om livsmedlet i sig är hälsosamt."
       }
     ]
   },
