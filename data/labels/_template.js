@@ -33,16 +33,15 @@ window.LABELS_DATA.push({
     "", // Paragraph 1: what the label is, history, scope
     ""  // Paragraph 2: product categories, additional details
   ],
-  certification: {
-    intro: "", // Introductory sentence for the certification process
+  credibility: {
+    summary: "", // REQUIRED — one sentence: who certifies and how it's verified
     items: [
-      // Each string is one step in the certification process
-    ]
-  },
-  oversight: {
-    intro: "", // Introductory sentence for oversight
-    items: [
-      // Each string is one aspect of the oversight process
+      // OPTIONAL — only include items that reveal something about trustworthiness.
+      // Omit the array or leave empty for labels with standard third-party certification.
+      {
+        label: "",  // Short heading (e.g. "DNA-testning", "Självdeklaration")
+        text: ""    // The consumer-relevant detail
+      }
     ]
   },
   notes: {

@@ -22,25 +22,8 @@ window.LABELS_DATA.push({
     "EU Ecolabel är Europeiska unionens officiella miljömärkning och lanserades 1992. Märkningen är frivillig och tilldelas produkter och tjänster som uppfyller strikta miljökrav genom hela sin livscykel, från råvara till avfall. EU Ecolabel regleras av EU-förordning 66/2010 och erkänns i alla EU:s medlemsländer. Över 100 000 varor och tjänster bär märkningen.",
     "I Sverige administreras EU Ecolabel av Miljömärkning Sverige AB – samma organisation som förvaltar Svanen. Märkningen är en typ 1-certifiering enligt ISO 14024 och omfattar elva produktområden, bland annat rengöringsmedel, textilier, papper, möbler, färg och lack, elektronik, trädgårdsprodukter och turistboenden. EU Ecolabel gäller inte livsmedel."
   ],
-  certification: {
-    intro: "Företag ansöker om EU Ecolabel hos det nationella behöriga organet – i Sverige är det Miljömärkning Sverige AB. Processen består av fem steg:",
-    items: [
-      "Företaget kontaktar Miljömärkning Sverige AB och väljer relevant produktgrupp med tillhörande kriterier.",
-      "Produkten förregistreras i EU:s produktkatalog ECAT.",
-      "En fullständig ansökan sammanställs med dokumentation, testresultat, datablad och deklarationer som visar att produkten uppfyller kriterierna för sin produktgrupp.",
-      "Ansökan skickas in tillsammans med ansökningsavgiften. Miljömärkning Sverige granskar dokumentationen inom två månader och kan kräva kompletteringar.",
-      "Vid godkännande får företaget använda EU Ecolabel-logotypen på produkten. En årlig avgift tillkommer, baserad på försäljningsvolym. Rabatter ges till små och medelstora företag samt EMAS- eller ISO 14001-certifierade verksamheter."
-    ]
-  },
-  oversight: {
-    intro: "Kontrollen av EU Ecolabel-märkta produkter sker genom det nationella behöriga organet och oberoende tredjepartstestning:",
-    items: [
-      "Miljömärkning Sverige AB kan begära kompletterande dokumentation och utföra oberoende verifieringar eller platsbesök för att kontrollera att kriterierna uppfylls.",
-      "Tredjepartslaboratorier och certifieringsorgan utför testning av produkter mot de fastställda kriterierna.",
-      "Inspektionsavgifter betalas direkt till de testande laboratorierna och varierar beroende på produktgrupp och testningens komplexitet.",
-      "EU-kommissionens gemensamma forskningscentrum (JRC) i Sevilla utvecklar och uppdaterar kriterierna regelbundet.",
-      "Vid bristande efterlevnad kan rätten att använda EU Ecolabel-märkningen återkallas."
-    ]
+  credibility: {
+    summary: "EU-reglerad märkning administrerad i Sverige av Miljömärkning Sverige AB, med tredjepartstestning av produkter mot kriterier utvecklade av EU-kommissionens forskningscentrum (JRC)."
   },
   notes: {
     items: [

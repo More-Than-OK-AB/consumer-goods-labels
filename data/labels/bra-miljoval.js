@@ -22,25 +22,8 @@ window.LABELS_DATA.push({
     "Bra Miljöval är Naturskyddsföreningens miljömärkning och grundades 1990. Det är den enda miljömärkningen i Sverige som drivs av en miljöorganisation. Märkningen är en oberoende tredjepartscertifiering enligt ISO 14024 och granskas av Global Ecolabelling Network (GEN) genom deras GENICES-förfarande.",
     "Märkningen omfattar över 700 certifierade produkter och tjänster inom tolv olika områden: elenergi, fjärrvärme, fjärrkyla, biobränsle, fordonsbränsle, persontransporter, godstransporter, budtjänster, kemiska produkter, kosmetika, försäkringar och livsmedelsbutiker. Kriterierna är strikta och skärps löpande för att driva miljöutvecklingen framåt."
   ],
-  certification: {
-    intro: "Företag som vill märka sina produkter eller tjänster med Bra Miljöval ansöker hos Naturskyddsföreningen. Processen fungerar så här:",
-    items: [
-      "Företaget skickar in en ansökan med dokumentation som visar att produkten eller tjänsten uppfyller kriterierna för sitt område.",
-      "Naturskyddsföreningens handläggare granskar dokumentationen och bedömer om kraven uppfylls.",
-      "Kriterierna bygger på två grundprinciper: att naturresurser ska sparas och att biologisk mångfald och människors hälsa inte får hotas.",
-      "Vid godkänd ansökan utfärdas en licens och företaget får använda märket.",
-      "Licensavgiften varierar beroende på produktområde och verksamhetens storlek."
-    ]
-  },
-  oversight: {
-    intro: "Naturskyddsföreningen ansvarar för den löpande kontrollen av alla licenstagare:",
-    items: [
-      "Årliga kontroller genomförs där licenstagaren visar att kriterierna fortfarande uppfylls.",
-      "Kontrollen sker genom dokumentgranskning och verifiering av uppgifter.",
-      "Stickprovskontroller kan genomföras utöver de årliga kontrollerna.",
-      "Kraven skärps successivt och licenstagare måste anpassa sig till uppdaterade kriterier.",
-      "Vid bristande efterlevnad kan licensen dras in och rätten att använda märket upphör."
-    ]
+  credibility: {
+    summary: "Ägs och granskas av Naturskyddsföreningen — den enda svenska miljömärkningen som drivs av en miljöorganisation. Oberoende tredjepartscertifiering enligt ISO 14024."
   },
   notes: {
     items: [

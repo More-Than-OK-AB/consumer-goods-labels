@@ -22,24 +22,17 @@ window.LABELS_DATA.push({
     "MSC (Marine Stewardship Council) är en internationell organisation som grundades 1997 och arbetar med certifiering och miljömärkning av hållbart fiske. Det blå MSC-märket innebär att sjömaten är vildfångad från ett fiske som bedömts som hållbart av oberoende experter. MSC är den mest erkända märkningen för hållbar sjömat globalt.",
     "MSC:s fiskestandard bedömer fisken utifrån tre kärnprinciper: hållbara fiskbestånd, minimal miljöpåverkan och effektiv förvaltning. Totalt utvärderas 28 kriterier. Utöver fiskecertifieringen har MSC en spårbarhetsstandard (Chain of Custody) som garanterar att MSC-märkt sjömat kan spåras genom hela leveranskedjan tillbaka till det certifierade fisket."
   ],
-  certification: {
-    intro: "MSC-certifiering utförs av oberoende, ackrediterade certifieringsorgan – inte av MSC själva. Processen ser ut så här:",
+  credibility: {
+    summary: "Certifieras av oberoende, ackrediterade organ – inte av MSC själva. Varje fiske poängsätts mot 28 kriterier där 60 är godkänt och 80 motsvarar bästa praxis.",
     items: [
-      "En frivillig förhandsbedömning kan genomföras för att identifiera eventuella hinder innan fullständig bedömning.",
-      "Den fullständiga bedömningen tar i genomsnitt 12–18 månader och inkluderar expertgranskning, intressentinput och offentligt samråd.",
-      "Fisket bedöms mot MSC:s tre principer: hållbara fiskbestånd, minimal miljöpåverkan och effektiv förvaltning. Varje kriterium poängsätts där 60 är godkänt och 80 motsvarar bästa praxis.",
-      "Vid godkänt resultat utfärdas ett certifikat som gäller i upp till fem år. Villkorade certifieringar kräver specificerade förbättringar under perioden.",
-      "Kostnaden varierar kraftigt beroende på fiskets komplexitet – från cirka 100 000 till 1 000 000 kronor."
-    ]
-  },
-  oversight: {
-    intro: "Certifierade fisken och företag i leveranskedjan kontrolleras löpande av oberoende certifieringsorgan:",
-    items: [
-      "Årliga revisioner genomförs för att granska förändringar i miljöförhållanden och fiskeriförvaltning.",
-      "Företag med spårbarhetscertifikat (Chain of Custody) revideras med 12–18 månaders intervall.",
-      "Certifieringsorganen är ackrediterade och oberoende från MSC.",
-      "DNA-testning används för att verifiera att MSC-märkta produkter verkligen kommer från certifierade fisken – mindre än 1 % felmärkning har påvisats.",
-      "Vid allvarliga brister kan certifikatet suspenderas eller dras in. Omcertifiering krävs inom fem år."
+      {
+        label: "DNA-testning",
+        text: "MSC använder DNA-testning för att verifiera att märkta produkter verkligen kommer från certifierade fisken. Mindre än 1 % felmärkning har påvisats."
+      },
+      {
+        label: "Certifieringskostnad",
+        text: "En fullständig bedömning kostar 100 000–1 000 000 kronor beroende på fiskets komplexitet, vilket kan vara ett hinder för mindre fisken."
+      }
     ]
   },
   notes: {

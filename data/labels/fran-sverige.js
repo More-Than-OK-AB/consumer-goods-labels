@@ -16,24 +16,13 @@ window.LABELS_DATA.push({
     "Från Sverige är en frivillig ursprungsmärkning som lanserades i april 2016. Märkningen ägs och förvaltas av Svenskmärkning AB, som i sin tur ägs gemensamt av LRF (Lantbrukarnas Riksförbund), Livsmedelsföretagen och Svensk Dagligvaruhandel. Idag använder cirka 220 företag märkningen på ungefär 12 000 godkända produkter.",
     "Märkningen finns i tre varianter: Från Sverige, Kött från Sverige och Mjölk från Sverige – alla med samma regelverk. Varianten Kött från Sverige ersatte 2016–2017 den tidigare märkningen \"Svenskt Kött\" som drevs av branschorganisationen med samma namn. Produkter med flera ingredienser ska innehålla minst 75 % svenskt innehåll. Om produkten innehåller kött, mjölk, ägg, fågel, fisk eller skaldjur måste dessa alltid vara 100 % svenska utan undantag. Märkningen omfattar bland annat grönsaker, frukt, spannmål, mejeri, kött, bageriprodukter, honung, blommor och färdiglagad mat."
   ],
-  certification: {
-    intro: "Företag som vill använda Från Sverige-märkningen ansöker hos Svenskmärkning AB. Processen ser ut så här:",
+  credibility: {
+    summary: "Ägs av Svenskmärkning AB. Alla led i kedjan måste vara tredjepartscertifierade för livsmedelssäkerhet (minst IP Livsmedel). Avgiftsfritt att använda.",
     items: [
-      "Företaget registrerar sig via Svenskmärknings onlineportal med företagsuppgifter, kopia på kvalitetscertifikat och de produkter man vill märka.",
-      "Alla led i förädlingskedjan måste vara tredjepartscertifierade enligt ett kvalitetssystem för livsmedelssäkerhet – minst IP Livsmedel. Andra godkända system inkluderar ISO 22000, BRC Food, FSSC 22000 och Svensk Butiksstandard.",
-      "Svenskmärkning granskar ansökan och godkänner varje enskild produkt. Återkoppling ges inom 3–5 arbetsdagar.",
-      "Vid godkännande tecknas ett avtal och företaget förbinder sig att följa Regelverket Från Sverige.",
-      "Märkningen är avgiftsfri att använda – det tillkommer ingen licensavgift."
-    ]
-  },
-  oversight: {
-    intro: "Kontrollen av Från Sverige-märkningen sker på flera nivåer:",
-    items: [
-      "Svenskmärkning genomför stickprovskontroller hos märkesanvändarna genom oberoende revisorer.",
-      "Märkesanvändare och deras underleverantörer ska genomföra en årlig intern revision.",
-      "Märkesanvändaren ansvarar för att underleverantörer känner till och följer Regelverket Från Sverige.",
-      "Den underliggande kvalitetscertifieringen (t.ex. IP Livsmedel) kontrolleras separat av ackrediterade certifieringsorgan.",
-      "Vid felaktig användning av märket kan avtalet sägas upp och rätten att använda märkningen upphör."
+      {
+        label: "Intern årsrevision",
+        text: "Den årliga revisionen genomförs av licensinnehavaren själv. Oberoende revisorer gör stickprovskontroller, men den löpande kontrollen vilar på företaget."
+      }
     ]
   },
   notes: {

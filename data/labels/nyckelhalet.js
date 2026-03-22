@@ -16,24 +16,13 @@ window.LABELS_DATA.push({
     "Nyckelhålet är en symbol som hjälper konsumenter att hitta nyttigare livsmedel. Märkningen infördes 1989 av Livsmedelsverket och är idag en av de mest kända hälsomärkningarna i Norden. Nyckelhålet finns även i Norge och Danmark.",
     "Livsmedel som bär Nyckelhålet innehåller mindre socker, salt och fett och mer fibrer och fullkorn jämfört med andra livsmedel i samma produktgrupp. Märkningen gäller inom specifika livsmedelskategorier och jämför alltså inte mellan olika typer av livsmedel."
   ],
-  certification: {
-    intro: "Till skillnad från många andra märkningar kräver Nyckelhålet ingen extern certifiering eller ansökan. Så fungerar det:",
+  credibility: {
+    summary: "Självdeklaration — producenten ansvarar själv för att kriterierna uppfylls. Ingen ansökan, avgift eller extern certifiering krävs.",
     items: [
-      "Nyckelhålet regleras av Livsmedelsverkets föreskrifter (LIVSFS 2009:6).",
-      "Livsmedelsproducenter får använda symbolen om produkten uppfyller de fastställda kriterierna för sin produktgrupp.",
-      "Det krävs ingen ansökan eller avgift – producenten ansvarar själv för att kriterierna uppfylls.",
-      "Kriterierna varierar per produktgrupp och inkluderar gränsvärden för fett, socker, salt och fiber.",
-      "Producenten måste kunna visa dokumentation på att kriterierna uppfylls vid kontroll."
-    ]
-  },
-  oversight: {
-    intro: "Kontrollen av Nyckelhålet sker inom ramen för den ordinarie livsmedelskontrollen:",
-    items: [
-      "Kommunernas miljö- och hälsoskyddskontor ansvarar för den löpande livsmedelskontrollen.",
-      "Livsmedelsverket utövar tillsyn på central nivå och uppdaterar regelverket.",
-      "Kontroll sker genom stickprov och planerade inspektioner.",
-      "Om en produkt inte uppfyller kraven kan tillsynsmyndigheten kräva att Nyckelhålssymbolen tas bort.",
-      "Producenten kan vid överträdelse föreläggas med vite."
+      {
+        label: "Ingen extern granskning",
+        text: "Till skillnad från de flesta andra märkningar granskas inte produkten av någon oberoende part innan symbolen används. Kontrollen sker i efterhand genom kommunernas livsmedelsinspektörer via stickprov."
+      }
     ]
   },
   notes: {

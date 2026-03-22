@@ -18,26 +18,23 @@ One or more of the following categories that the label relates to:
 
 Each tag should have a very brief explanation of how it relates to this specific label.
 
-## 3. Certification process
-How a producer gets to use the label:
-- Which organization is responsible for the label
-- Requirements for becoming certified
-- Transition period (if applicable)
-- Application procedure
-- Fees and costs
+## 3. Credibility & oversight (Trovärdighet & kontroll)
+A mandatory one-sentence summary of who stands behind the label and the verification model (third-party certification, self-declaration, government-regulated, industry-owned).
 
-## 4. Oversight & follow-up
-How compliance is ensured:
-- Who performs the inspections
-- How often inspections occur
-- Type of inspection (audit, spot checks, etc.)
-- Consequences for non-compliance
+Optionally, bullet items — **only** when they reveal something that could affect a consumer's trust in the label:
+- Self-regulation or weak external oversight
+- Unusually strong verification (lab testing, DNA testing, public databases)
+- High certification costs that may exclude producers
+- Conflicts of interest (e.g. producers choosing their own auditor)
+- Other credibility-relevant signals
 
-## 5. Notes
+Do NOT include generic certification/oversight boilerplate ("annual audits", "accredited by Swedac", "lose cert if non-compliant") unless it is unusual for this type of label.
+
+## 4. Notes
 Comparisons, consumer warnings, enforcement concerns, or other relevant caveats about the label in relation to others featured on the site.
 Only include entries that add genuine consumer insight — omit trivially obvious domain differences.
 If there has been significant news coverage about the label or oversight which haven't worked as expected, include a brief note about that as well.
 Every note must have a **label** (bold heading) and **text**. For comparisons, use the other label's name as heading. For standalone notes, use a short descriptive heading (e.g. "Regelskärpning 2026").
 
-## 6. Data format
+## 5. Data format
 See `data/labels/_template.js` for the exact JS object structure expected per label.

@@ -34,25 +34,8 @@ window.LABELS_DATA.push({
     "ASC (Aquaculture Stewardship Council) är en oberoende internationell organisation som grundades 2010 av Världsnaturfonden (WWF) och den nederländska organisationen IDH (Dutch Sustainable Trade Initiative). ASC driver världens ledande certifieringsprogram för ansvarsfullt vattenbruk.",
     "ASC-certifieringen omfattar odlad fisk och skaldjur som lax, räkor, pangasius, tilapia, musslor, ostron och abalone. Standarden ställer krav på miljöhänsyn, djurvälfärd, ansvarsfull foderanvändning, begränsad kemikalie- och antibiotikaanvändning samt rättvisa arbetsvillkor. ASC har även en spårbarhetsstandard (Chain of Custody) som garanterar att ASC-märkta produkter kan spåras genom hela leveranskedjan."
   ],
-  certification: {
-    intro: "ASC-certifiering utförs av oberoende certifieringsorgan som är ackrediterade av Accreditation Services International (ASI). Processen ser ut så här:",
-    items: [
-      "Vattenbruksföretaget förbereder sig med hjälp av ASC:s checklista och samlar in data – vissa indikatorer kräver minst sex månaders datainsamling före första revisionen.",
-      "En fullständig bedömning genomförs av ett oberoende revisionsteam som granskar dokumentation, intervjuar intressenter och utvärderar verksamheten mot ASC:s standard.",
-      "Bedömningen omfattar över 500 kontrollpunkter inom miljöpåverkan, foderanvändning, djurvälfärd, kemikalie- och antibiotikaanvändning samt sociala villkor.",
-      "En utkastrapport granskas av odlaren och två oberoende sakkunniga, publiceras för offentliga synpunkter och leder sedan till ett certifieringsbeslut.",
-      "Vid godkänt resultat utfärdas ett certifikat som gäller i tre år."
-    ]
-  },
-  oversight: {
-    intro: "Certifierade vattenbruksföretag kontrolleras löpande av oberoende certifieringsorgan under certifikatets giltighetstid:",
-    items: [
-      "Slumpmässiga övervakningsrevisioner genomförs under den treåriga certifieringsperioden.",
-      "Certifieringsorganen är ackrediterade av ASI (Accreditation Services International) som övervakar revisorernas kompetens och oberoende.",
-      "Revisioner kontrollerar kritiska punkter som skörd, vattenbehandling, foderanvändning och arbetsvillkor.",
-      "Vid avvikelser krävs korrigerande åtgärder. Allvarliga brister kan leda till att certifikatet suspenderas eller dras in.",
-      "Omcertifiering krävs efter tre år med en ny fullständig bedömning."
-    ]
+  credibility: {
+    summary: "Certifieras av oberoende organ ackrediterade av ASI (Accreditation Services International), med över 500 kontrollpunkter och treåriga certifieringscykler."
   },
   notes: {
     items: [

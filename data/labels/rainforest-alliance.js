@@ -22,25 +22,8 @@ window.LABELS_DATA.push({
     "Rainforest Alliance är en internationell organisation som certifierar hållbart jordbruk, främst i tropiska regioner. Organisationen grundades 1987 i New York och har idag sitt huvudkontor där. År 2018 gick Rainforest Alliance samman med UTZ och 2020 lanserades en gemensam standard. Idag arbetar organisationen med jordbrukare, skogssamhällen och företag i över 70 länder.",
     "Certifieringen omfattar framför allt kaffe, te, kakao, bananer och andra tropiska grödor. Den gröna grodan – en rödögd trädgroda – är märkningens symbol och valdes för att den fungerar som en bioindikator: friska grodpopulationer signalerar friska ekosystem. Standarden ställer krav på miljöskydd, hållbara jordbruksmetoder, rättvisa arbetsvillkor och ekonomisk motståndskraft."
   ],
-  certification: {
-    intro: "Rainforest Alliance-certifiering utförs av oberoende, auktoriserade certifieringsorgan. Processen består av fyra steg:",
-    items: [
-      "Jordbrukaren förbereder sig genom att granska kraven i Rainforest Alliance Sustainable Agriculture Standard och genomgå tillgänglig utbildning.",
-      "Ett auktoriserat certifieringsorgan kontaktas. Jordbrukaren ansvarar för revisionskostnaden, som varierar beroende på gårdens storlek, plats och komplexitet.",
-      "En revisor besöker gården och kontrollerar efterlevnad genom dokumentgranskning, fältbesök, anläggningsinspektion och intervjuer med ledning och anställda.",
-      "Standarden innehåller kärnkrav som alltid måste uppfyllas, samt förbättringskrav i två nivåer – nivå 1 inom tre år och nivå 2 inom sex år.",
-      "Vid godkänd revision utfärdas ett certifikat. Jordbrukaren tecknar ett avtal för att få använda den gröna grodan på sina produkter."
-    ]
-  },
-  oversight: {
-    intro: "Certifierade gårdar och företag kontrolleras löpande för att säkerställa att standarden efterlevs:",
-    items: [
-      "Årliga revisioner genomförs som täcker samtliga krav i standarden.",
-      "Fullständig omcertifiering krävs vart tredje år.",
-      "Revisionerna utförs av oberoende certifieringsorgan enligt Rainforest Alliance Auditor Verification Protocol.",
-      "Geolokalisering av alla gårdsenheter krävs för spårbarhet och kontroll av avskogning.",
-      "Vid bristande efterlevnad kan certifikatet suspenderas eller dras in. Jordbrukaren ges möjlighet att åtgärda avvikelser innan slutgiltigt beslut."
-    ]
+  credibility: {
+    summary: "Certifieras av oberoende, auktoriserade certifieringsorgan med årliga revisioner och fullständig omcertifiering vart tredje år. Geolokalisering av gårdar krävs för att motverka avskogning."
   },
   notes: {
     items: [

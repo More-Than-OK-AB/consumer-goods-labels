@@ -28,28 +28,17 @@ window.LABELS_DATA.push({
     "Svenska Ägg är branschorganisationen för svensk äggnäring och representerar företag inom hela produktionskedjan – från foderföretag och kläckerier till äggproducenter och äggpackerier. Organisationen förvaltar certifieringen Certifierad Svensk Äggkvalitet som visas med en rosa check på äggskalet.",
     "Ett certifierat ägg med den rosa checken kan spåras genom hela kedjan från ägget i butik till gården där det är värpt. Certifieringen garanterar att hanteringen uppfyller Sveriges hårda krav inom djurvälfärd, livsmedelssäkerhet, smittskydd och produktkvalitet. Hela produktionskedjan skapar dessutom jobb i Sverige."
   ],
-  certification: {
-    intro: "För att ett ägg ska få märkas med den rosa checken måste samtliga led i produktionskedjan vara certifierade enligt Svensk Äggkvalitet. Certifieringen innebär:",
+  credibility: {
+    summary: "Branschprogram med myndighetsöversyn av Livsmedelsverket. Certifierade företag listas offentligt på Svenska Äggs webbplats.",
     items: [
-      "Salmonellafria ägg – alla ägg är garanterat fria från salmonella tack vare ett omfattande smittskyddsprogram.",
-      "Ingen näbbtrimning utförs på hönorna.",
-      "Ingen antibiotika används som tillväxtstimulantia i produktionen.",
-      "Endast GMO-fritt sojamjöl används enligt EU:s definition.",
-      "Endast uthålligt producerad soja används.",
-      "Foder till värphöns innehåller inte syntetiska pigment.",
-      "Certifierad livsmedelssäkerhet och miljöledningssystem.",
-      "Uppfyllande av Svenska Äggs Omsorgsprogram för djurvälfärd.",
-      "Uppfyllande av Svenska Äggs förebyggande smittskyddsprogram och hälsokontroll."
-    ]
-  },
-  oversight: {
-    intro: "Kontrollen av certifierade ägg sker genom flera parallella system med myndighetsöversyn:",
-    items: [
-      "Livsmedelsverket har kontrollansvar för livsmedelsanläggningar och äggpackerier.",
-      "Varje anläggning har ett SE-nummer som ska anges på äggförpackningen för spårbarhet.",
-      "Certifierade företag granskas och listas på Svenska Äggs webbplats.",
-      "Omsorgsprogrammet kontrollerar djurvälfärd genom hela produktionskedjan.",
-      "Smittskyddsprogrammet säkerställer hälsokontroll i hönsbesättningar."
+      {
+        label: "SE-nummer för spårbarhet",
+        text: "Varje anläggning har ett unikt SE-nummer som anges på förpackningen — konsumenten kan spåra ägget tillbaka till gården."
+      },
+      {
+        label: "Salmonellagaranti",
+        text: "Alla certifierade ägg är garanterat salmonellafria genom ett omfattande smittskyddsprogram med provtagning i hela kedjan."
+      }
     ]
   },
   notes: {

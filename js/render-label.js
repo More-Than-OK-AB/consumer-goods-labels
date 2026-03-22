@@ -88,15 +88,26 @@
   tagSection.appendChild(tagList);
   container.appendChild(tagSection);
 
-  // Certifieringsprocess
-  container.appendChild(
-    LabelUtils.createListSection("Certifieringsprocess", label.certification)
-  );
-
-  // Kontroll & uppföljning
-  container.appendChild(
-    LabelUtils.createListSection("Kontroll & uppf\u00f6ljning", label.oversight)
-  );
+  // Trovärdighet & kontroll
+  if (label.credibility) {
+    var credSection = LabelUtils.createSection("Trovärdighet & kontroll");
+    var summaryP = document.createElement("p");
+    summaryP.textContent = label.credibility.summary;
+    credSection.appendChild(summaryP);
+    if (label.credibility.items && label.credibility.items.length > 0) {
+      var credList = document.createElement("ul");
+      label.credibility.items.forEach(function (item) {
+        var li = document.createElement("li");
+        var strong = document.createElement("strong");
+        strong.textContent = item.label;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(" \u2013 " + item.text));
+        credList.appendChild(li);
+      });
+      credSection.appendChild(credList);
+    }
+    container.appendChild(credSection);
+  }
 
   // Övrigt / Kommentarer
   if (label.notes && label.notes.items && label.notes.items.length > 0) {

@@ -40,24 +40,13 @@ window.LABELS_DATA.push({
     "KRAV är Sveriges mest kända miljömärkning för livsmedel och grundades 1985. Märkningen bygger på ekologiska principer och ställer krav som går utöver EU:s regler för ekologisk produktion. KRAV-märket omfattar hela kedjan från jord till bord och inkluderar krav på miljöhänsyn, djurvälfärd, hälsa och socialt ansvar.",
     "KRAV-märkta produkter finns inom en rad kategorier: frukt och grönt, mejeri, kött, fisk, ägg, spannmål, drycker och förädlade livsmedel. Även restauranger och storkök kan KRAV-certifieras."
   ],
-  certification: {
-    intro: "För att bli KRAV-certifierad behöver producenten ansöka hos ett godkänt certifieringsorgan. Processen ser ut så här:",
+  credibility: {
+    summary: "Certifieras av oberoende organ (Kiwa, SMAK, HS Certifiering) ackrediterade av Swedac, med årliga revisioner på plats.",
     items: [
-      "Producenten kontaktar ett ackrediterat certifieringsorgan (t.ex. Kiwa, SMAK eller HS Certifiering).",
-      "En omställningsperiod krävs – vanligtvis två år för ettåriga grödor och tre år för fleråriga grödor som fruktträd och bärbuskar. För djurhållning varierar perioden beroende på djurslag: tolv månader för nötkreatur och sex månader för grisar.",
-      "Certifieringsorganet granskar att produktionen uppfyller KRAV:s regelverk.",
-      "Vid godkänd granskning utfärdas ett certifikat som gäller i ett år.",
-      "Avgiften varierar beroende på verksamhetens storlek, men inkluderar en årsavgift till KRAV samt kostnader för revision hos certifieringsorganet."
-    ]
-  },
-  oversight: {
-    intro: "KRAV-certifierade verksamheter kontrolleras av oberoende, ackrediterade certifieringsorgan. Kontrollen sker på följande sätt:",
-    items: [
-      "Årliga revisioner genomförs på plats hos producenten.",
-      "Oanmälda kontroller kan ske utöver de planerade revisionerna.",
-      "Certifieringsorganen är ackrediterade av Swedac (Styrelsen för ackreditering och teknisk kontroll).",
-      "Vid avvikelser ges tid att åtgärda brister. Allvarliga överträdelser kan leda till att certifikatet dras in.",
-      "KRAV uppdaterar sitt regelverk löpande och certifierade verksamheter måste följa de senaste reglerna."
+      {
+        label: "Val av certifieringsorgan",
+        text: "Certifierade företag väljer själva vilket certifieringsorgan som kontrollerar dem, vilket har debatterats offentligt. Swedac har bemött kritiken och pekat på att alla ackrediterade organ följer samma regelverk."
+      }
     ]
   },
   notes: {
@@ -69,10 +58,6 @@ window.LABELS_DATA.push({
       {
         label: "Svenskt Sigill",
         text: "Svenskt Sigill tillåter konventionell odling med kontrollerad användning av bekämpningsmedel, medan KRAV kräver ekologisk produktion. Å andra sidan kräver Svenskt Sigill svenskt ursprung genom hela kedjan, vilket KRAV inte gör. Märkningarna kan kombineras och organisationerna har samarbetat kring klimatcertifiering."
-      },
-      {
-        label: "Val av certifieringsorgan",
-        text: "Certifierade företag väljer själva vilket certifieringsorgan som kontrollerar dem, vilket har debatterats offentligt. Swedac har bemött kritiken och pekat på att alla ackrediterade organ följer samma regelverk och granskas regelbundet."
       },
       {
         label: "Regelskärpning 2026",

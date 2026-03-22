@@ -28,24 +28,17 @@ window.LABELS_DATA.push({
     "Svensk Fågel är branschorganisationen för svensk matfågelproduktion och representerar 98 procent av matfågelproduktionen i Sverige. Organisationens märkning, den Gula Pippin, finns på kyckling och kalkon från medlemsföretag som Kronfågel, Guldfågeln, Bjärefågel och Ingelsta kalkon.",
     "Märkningen garanterar att fågeln är kläckt, uppfödd, slaktad, förädlad och kontrollerad i Sverige. Svensk Fågel har sedan slutet av 1980-talet utvecklat omfattande kvalitets- och kontrollprogram som täcker djurhälsa, djurvälfärd, smittskydd och livsmedelssäkerhet. Programmen togs fram efter att antibiotika i djurfoder fasades ut och ny djurskyddslagstiftning infördes."
   ],
-  certification: {
-    intro: "Svensk Fågels märkning bygger på medlemskap i branschorganisationen och efterlevnad av dess kvalitetsprogram. Processen ser ut så här:",
+  credibility: {
+    summary: "Branschprogram under myndighetsöversyn — kontroller utförs av oberoende ackrediterade organ och Livsmedelsverkets veterinärer.",
     items: [
-      "Producenten blir medlem i Svensk Fågel och förbinder sig att följa organisationens samtliga kvalitets- och kontrollprogram.",
-      "Djuromsorgsprogrammet omfattar 31 kontrollpunkter som berör daglig omsorg, värmeutrustning, foder och vatten, hygien och ströbädden i stallet.",
-      "Allt sojafoder måste vara GMO-fritt och certifierat enligt ProTerra eller RTRS. Fiskmjöl är förbjudet i fodret.",
-      "Medlemmar genomgår utbildningar kring djurhälsa, djurvälfärd och livsmedelssäkerhet.",
-      "Hormoner är förbjudna och antibiotika får enbart användas för behandling av sjukdom – aldrig i tillväxtfrämjande eller förebyggande syfte."
-    ]
-  },
-  oversight: {
-    intro: "Kontroll av Svensk Fågels medlemmar sker genom flera parallella program under myndighetstillsyn:",
-    items: [
-      "Alla kontroller på gårdar och slakterier utförs under översyn av myndigheter och av oberoende ackrediterade kontrollorgan.",
-      "Alla kycklingflockar som levereras till slakteriet kontrolleras, och kycklingfötter bedöms under överinseende av Livsmedelsverkets officiella veterinär.",
-      "Salmonellaprogrammet säkerställer att produkterna håller högsta salmonellastandard genom provtagning i hela kedjan.",
-      "Kvalitetsprogrammen utvecklas i samarbete mellan myndigheter, forskare och näringen för att spegla aktuell kunskap.",
-      "Vid bristande efterlevnad kan medlemskapet och rätten att använda den Gula Pippin dras in."
+      {
+        label: "Salmonellaprogram",
+        text: "Alla kycklingflockar kontrolleras vid slakt och provtas genom hela kedjan. Kycklingfötter bedöms under överinseende av Livsmedelsverkets veterinär — ett konkret och mätbart kvalitetsmått."
+      },
+      {
+        label: "31 kontrollpunkter",
+        text: "Djuromsorgsprogrammet omfattar 31 specifika kontrollpunkter som berör daglig omsorg, stallmiljö, foder, vatten och ströbädd."
+      }
     ]
   },
   notes: {

@@ -34,25 +34,8 @@ window.LABELS_DATA.push({
     "Svenskt Sigill är en kvalitetsmärkning för svenska livsmedel och blommor som ägs av Sigill Kvalitetssystem AB, ett dotterbolag till LRF (Lantbrukarnas Riksförbund). Grunden lades 1995 när Lantmännen lanserade en odlingsstandard för spannmål med syfte att minska näringsläckage, begränsa bekämpningsmedel och stärka biologisk mångfald.",
     "Märkningen bygger på IP-standarden (Integrerad Produktion) och garanterar att råvaran är odlad, uppfödd, producerad, slaktad, förädlad och förpackad i Sverige. IP-standarden finns i två kravnivåer: IP Grundcertifiering, som fokuserar på livsmedelssäkerhet, spårbarhet och hygien, samt IP Sigill, som ställer högre krav inom miljö, djurvälfärd och klimat. Certifiering på Sigillnivån krävs för att få använda Svenskt Sigill-märket. Utöver basnivåerna finns tilläggsmoduler som Klimatcertifiering, Naturbeteskött och IP Arbetsvillkor. Märkningen omfattar produktkategorier som frukt och grönt, spannmål, kött, mejeri, ägg, kyckling, honung, fisk och skaldjur samt blommor. Idag finns cirka 4 000 utfärdade certifikat."
   ],
-  certification: {
-    intro: "För att få använda Svenskt Sigill-märkningen måste producenten vara certifierad enligt IP Sigill-standarden. Processen ser ut så här:",
-    items: [
-      "Producenten ansöker hos ett ackrediterat certifieringsorgan, till exempel Kiwa, SMAK eller HS Certifiering.",
-      "En revision genomförs på plats av en oberoende revisor som kontrollerar att verksamheten uppfyller IP-standardens krav.",
-      "IP-standarden omfattar livsmedelssäkerhet, miljöansvar, djurvälfärd och rättvisa arbetsvillkor.",
-      "Vid godkänd revision utfärdas ett certifikat. Certifierade producenter betalar en årlig systemavgift som inkluderar rätten att använda märkningen.",
-      "Livsmedelsföretag som köper in och förädlar certifierade råvaror tecknar ett märkeslicensavtal med en årlig licensavgift."
-    ]
-  },
-  oversight: {
-    intro: "Kontrollen av Svenskt Sigill-certifierade verksamheter utförs av oberoende, ackrediterade certifieringsorgan:",
-    items: [
-      "Fysiska revisioner på plats genomförs vartannat år, med administrativa kontroller under mellanliggande år.",
-      "Certifieringsorganen (Kiwa, SMAK, HS Certifiering) är ackrediterade av Swedac.",
-      "Årliga stickprovskontroller genomförs hos upp till 20 % av märkeslicensinnehavarna.",
-      "Vid avvikelser ska bristerna åtgärdas innan certifikatet kan behållas. Allvarliga överträdelser kan leda till att certifikatet dras in.",
-      "Sigill Kvalitetssystem uppdaterar IP-standarden löpande och certifierade verksamheter måste följa den senaste versionen."
-    ]
+  credibility: {
+    summary: "Certifieras enligt IP Sigill-standarden av oberoende organ (Kiwa, SMAK, HS Certifiering) ackrediterade av Swedac."
   },
   notes: {
     items: [
