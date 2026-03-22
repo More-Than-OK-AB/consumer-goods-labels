@@ -8,19 +8,16 @@ window.LABELS_DATA.push({
       id: "ekologiskt",
       label: "Ekologiskt",
       explanation: "Grundkravet är ekologisk produktion utan kemiska bekämpningsmedel, konstgödsel eller GMO.",
-      showOnCard: true
     },
     {
       id: "miljo",
       label: "Miljö",
       explanation: "Reglerna främjar kretslopp, biologisk mångfald och hållbar markanvändning.",
-      showOnCard: true
     },
     {
       id: "djurvalf",
       label: "Djurvälfärd",
       explanation: "Djuren ska ha tillgång till utevistelse, bete och ekologiskt foder samt möjlighet till naturligt beteende.",
-      showOnCard: false
     }
   ],
   cardDescription: "EU:s officiella märkning för ekologiska livsmedel. EU-lövet garanterar att minst 95 % av ingredienserna är ekologiskt producerade enligt EU:s gemensamma regelverk.",

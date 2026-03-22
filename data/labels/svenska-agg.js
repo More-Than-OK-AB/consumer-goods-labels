@@ -8,19 +8,16 @@ window.LABELS_DATA.push({
       id: "ursprung",
       label: "Ursprung",
       explanation: "Garanterar svenskt ursprung från höna till ägg – hela produktionskedjan finns i Sverige.",
-      showOnCard: true
     },
     {
       id: "djurvalf",
       label: "Djurvälfärd",
       explanation: "Omsorgsprogram med krav på god djurvälfärd, inklusive förbud mot näbbtrimning och policy för utplockning av hönor.",
-      showOnCard: true
     },
     {
       id: "halsa",
       label: "Hälsa",
       explanation: "Salmonellafria ägg tack vare omfattande smittskyddsprogram, ingen antibiotika som tillväxtstimulantia och strikt hälsokontroll.",
-      showOnCard: false
     }
   ],
   cardDescription: "Branschorganisationens certifiering för svenska ägg. Den rosa checken på äggskalet garanterar spårbarhet, svenskt ursprung och kvalitetssäkrad produktion med höga krav på djurvälfärd och livsmedelssäkerhet.",

@@ -8,13 +8,11 @@ window.LABELS_DATA.push({
       id: "hav-fiske",
       label: "Hav & fiske",
       explanation: "Certifierar att vildfångad sjömat kommer från hållbart förvaltade fisken som inte hotar fiskbestånden.",
-      showOnCard: true
     },
     {
       id: "miljo",
       label: "Miljö",
       explanation: "Krav på att fisket minimerar påverkan på marina ekosystem, biologisk mångfald och havsmiljön.",
-      showOnCard: true
     }
   ],
   cardDescription: "Internationell certifiering för hållbart vildfångad sjömat. Det blå MSC-märket garanterar att fisken kommer från ett hållbart förvaltat fiske med minimal miljöpåverkan.",

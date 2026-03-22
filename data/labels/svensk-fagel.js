@@ -8,19 +8,16 @@ window.LABELS_DATA.push({
       id: "ursprung",
       label: "Ursprung",
       explanation: "Garanterar att fågeln är kläckt, uppfödd, slaktad, förädlad och kontrollerad i Sverige.",
-      showOnCard: true
     },
     {
       id: "djurvalf",
       label: "Djurvälfärd",
       explanation: "Djuromsorgsprogram med 31 kontrollpunkter som omfattar daglig omsorg, stallmiljö, foder, vatten och ströbädd.",
-      showOnCard: true
     },
     {
       id: "halsa",
       label: "Hälsa",
       explanation: "Salmonellafri kyckling och kalkon tack vare omfattande smittskyddsprogram. Antibiotika får enbart användas för behandling av sjukdom, aldrig i tillväxtfrämjande syfte.",
-      showOnCard: false
     }
   ],
   cardDescription: "Branschorganisationens märkning för svensk kyckling och kalkon. Den Gula Pippin garanterar svenskt ursprung, salmonellafrihet och djuromsorg genom hela produktionskedjan.",

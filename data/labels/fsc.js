@@ -8,13 +8,11 @@ window.LABELS_DATA.push({
       id: "miljo",
       label: "Miljö",
       explanation: "Krav på att skogsbruket bevarar biologisk mångfald, skyddar ekologiskt värdefulla miljöer och upprätthåller skogens ekosystemtjänster.",
-      showOnCard: true
     },
     {
       id: "socialt-ansvar",
       label: "Socialt ansvar",
       explanation: "Krav på säkra arbetsvillkor, respekt för lokalsamhällen och urfolks rättigheter, inklusive samernas rättigheter i Sverige.",
-      showOnCard: true
     }
   ],
   cardDescription: "Internationell certifiering för ansvarsfullt skogsbruk. FSC-märket garanterar att träprodukter kommer från skog som brukas med hänsyn till miljö, människor och ekonomisk hållbarhet.",

@@ -8,31 +8,26 @@ window.LABELS_DATA.push({
       id: "ekologiskt",
       label: "Ekologiskt",
       explanation: "Grundkravet är ekologisk produktion utan kemiska bekämpningsmedel eller konstgödsel.",
-      showOnCard: true
     },
     {
       id: "miljo",
       label: "Miljö",
       explanation: "Krav på biologisk mångfald, kretslopp och begränsad klimatpåverkan. Specifika klimatregler kräver förnybar el och beräkning av klimatavtryck.",
-      showOnCard: true
     },
     {
       id: "djurvalf",
       label: "Djurvälfärd",
       explanation: "Djuren ska ha möjlighet till naturligt beteende, utevistelse och god hälsa. Snabbväxande kycklingraser är förbjudna sedan 2026.",
-      showOnCard: true
     },
     {
       id: "socialt-ansvar",
       label: "Socialt ansvar",
       explanation: "Regler om arbetsvillkor, förbud mot tvångsarbete och diskriminering samt rätt till facklig organisering – gäller både i Sverige och internationellt.",
-      showOnCard: true
     },
     {
       id: "ursprung",
       label: "Ursprung",
       explanation: "Spårbarhet genom hela produktionskedjan.",
-      showOnCard: false
     }
   ],
   cardDescription: "Sveriges mest kända miljömärkning för livsmedel. KRAV-märket står för ekologisk produktion med höga krav på djurvälfärd, hälsa och socialt ansvar.",

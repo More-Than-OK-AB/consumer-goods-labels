@@ -8,13 +8,11 @@ window.LABELS_DATA.push({
       id: "miljo",
       label: "Miljö",
       explanation: "Livscykelbaserade krav på minskad miljöpåverkan, energieffektivitet, begränsade farliga kemikalier och cirkulär ekonomi.",
-      showOnCard: true
     },
     {
       id: "halsa",
       label: "Hälsa",
       explanation: "Strikta begränsningar av hälsoskadliga ämnen i produkter som rengöringsmedel, kosmetika och textilier.",
-      showOnCard: false
     }
   ],
   cardDescription: "EU:s officiella miljömärkning för varor och tjänster. EU Ecolabel granskar produkters miljöpåverkan genom hela livscykeln och finns på över 100 000 varor och tjänster i hela EU.",

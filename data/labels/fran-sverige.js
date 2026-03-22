@@ -8,7 +8,6 @@ window.LABELS_DATA.push({
       id: "ursprung",
       label: "Ursprung",
       explanation: "Garanterar att produkten är odlad, född och uppfödd, förädlad, förpackad och kontrollerad i Sverige.",
-      showOnCard: true
     }
   ],
   cardDescription: "Frivillig ursprungsmärkning som garanterar att råvaror och livsmedel är odlade, uppfödda, förädlade, förpackade och kontrollerade i Sverige.",

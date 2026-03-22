@@ -63,7 +63,7 @@
     p.textContent = label.cardDescription;
     card.appendChild(p);
 
-    var tagsDiv = LabelUtils.createTags(label.tags, true);
+    var tagsDiv = LabelUtils.createTags(label.tags);
     card.appendChild(tagsDiv);
 
     var link = document.createElement("span");

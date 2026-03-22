@@ -8,7 +8,6 @@ window.LABELS_DATA.push({
       id: "halsa",
       label: "Hälsa",
       explanation: "Fokuserar uteslutande på näringsinnehåll och att göra det enklare för konsumenter att välja nyttigare alternativ.",
-      showOnCard: true
     }
   ],
   cardDescription: "Livsmedelsverkets symbol för nyttigare val. Nyckelhålet hjälper konsumenter att hitta livsmedel med mindre socker, salt och fett samt mer fibrer och fullkorn.",

@@ -8,13 +8,11 @@ window.LABELS_DATA.push({
       id: "miljo",
       label: "Miljö",
       explanation: "Krav på skydd av regnskog, biologisk mångfald, ansvarsfull vatten- och markanvändning samt minskad kemikalieanvändning.",
-      showOnCard: true
     },
     {
       id: "socialt-ansvar",
       label: "Socialt ansvar",
       explanation: "Krav på rättvisa arbetsvillkor, mänskliga rättigheter och förbättrad levnadsstandard för jordbrukare i odlarländer.",
-      showOnCard: true
     }
   ],
   cardDescription: "Internationell certifiering för hållbart jordbruk i tropiska regioner. Den gröna grodan garanterar att odlingen tar hänsyn till miljö, mänskliga rättigheter och jordbrukares levnadsvillkor.",

@@ -24,8 +24,7 @@ window.LABELS_DATA.push({
       id: "",          // e.g. "ekologiskt", "miljo", "halsa", "djurvalf",
                        //      "ursprung", "socialt-ansvar", "hav-fiske"
       label: "",       // Swedish display name matching label-spec.md
-      explanation: "", // How this tag relates to this specific label
-      showOnCard: true // true for primary tags shown on index card
+      explanation: ""  // How this tag relates to this specific label
     }
   ],
   cardDescription: "", // 1-2 sentences for the index page card

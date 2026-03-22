@@ -8,25 +8,21 @@ window.LABELS_DATA.push({
       id: "hav-fiske",
       label: "Hav & fiske",
       explanation: "Certifierar att odlad fisk och skaldjur kommer från ansvarsfullt och hållbart vattenbruk.",
-      showOnCard: true
     },
     {
       id: "miljo",
       label: "Miljö",
       explanation: "Krav på minimal miljöpåverkan, skydd av biologisk mångfald, ansvarsfull foderanvändning och hållbar vattenhantering.",
-      showOnCard: true
     },
     {
       id: "djurvalf",
       label: "Djurvälfärd",
       explanation: "Standarden inkluderar krav på djurvälfärd för odlad fisk, inklusive sjukdomshantering och begränsad antibiotikaanvändning.",
-      showOnCard: false
     },
     {
       id: "socialt-ansvar",
       label: "Socialt ansvar",
       explanation: "Krav på rättvisa arbetsvillkor och respekt för mänskliga rättigheter i vattenbruksverksamheten.",
-      showOnCard: false
     }
   ],
   cardDescription: "Internationell certifiering för ansvarsfullt odlad fisk och skaldjur. ASC-märket garanterar att vattenbruket uppfyller krav på miljö, djurvälfärd och socialt ansvar.",

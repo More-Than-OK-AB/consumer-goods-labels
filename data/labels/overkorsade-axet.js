@@ -8,7 +8,6 @@ window.LABELS_DATA.push({
       id: "halsa",
       label: "Hälsa",
       explanation: "Tredjepartsverifierad garanti för att produkten innehåller högst 20 mg/kg gluten, säker för personer med celiaki.",
-      showOnCard: true
     }
   ],
   cardDescription: "Europeisk märkning för glutenfria livsmedel. Överkorsade Axet garanterar att produkten innehåller högst 20 mg/kg gluten, verifierat genom oberoende laboratorietester och revisioner.",

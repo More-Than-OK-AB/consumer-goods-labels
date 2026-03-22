@@ -8,13 +8,11 @@ window.LABELS_DATA.push({
       id: "socialt-ansvar",
       label: "Socialt ansvar",
       explanation: "Kärnfokus på rättvisa handelsvillkor, demokratiskt inflytande, förbud mot diskriminering och rätt att organisera sig.",
-      showOnCard: true
     },
     {
       id: "miljo",
       label: "Miljö",
       explanation: "Miljökraven inkluderar förbud mot skadliga bekämpningsmedel, skydd av biologisk mångfald och främjande av hållbart jordbruk.",
-      showOnCard: true
     }
   ],
   cardDescription: "Världens mest kända certifiering för rättvis handel. Fairtrade garanterar minimipris och premie till odlare i utvecklingsländer samt ställer krav på arbetsvillkor och miljöhänsyn.",

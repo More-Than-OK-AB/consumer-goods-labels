@@ -8,7 +8,6 @@ window.LABELS_DATA.push({
       id: "halsa",
       label: "Hälsa",
       explanation: "Garanterar att produkten innehåller hög halt av karaktärsgivande råvaror och ett minimum av tillsatser.",
-      showOnCard: true
     }
   ],
   cardDescription: "Konsumentmärkning för livsmedel som innehåller det du förväntar dig – hög halt av riktiga råvaror och inga onödiga tillsatser.",

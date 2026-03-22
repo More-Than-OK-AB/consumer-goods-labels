@@ -8,7 +8,6 @@ window.LABELS_DATA.push({
       id: "miljo",
       label: "Miljö",
       explanation: "Krav på hållbart skogsbruk som bevarar biologisk mångfald, skyddar vatten och mark samt upprätthåller skogens ekologiska funktioner.",
-      showOnCard: true
     }
   ],
   cardDescription: "Internationell certifiering för hållbart skogsbruk. PEFC-märket garanterar att trä- och pappersprodukter kommer från ansvarsfullt brukade skogar.",

@@ -41,8 +41,7 @@
   h1.textContent = label.name;
   header.appendChild(h1);
 
-  // Add tags (only showOnCard tags)
-  var headerTags = LabelUtils.createTags(label.tags, true);
+  var headerTags = LabelUtils.createTags(label.tags);
   header.appendChild(headerTags);
   container.appendChild(header);
 
@@ -72,7 +71,7 @@
 
   // Taggar - show all tags
   var tagSection = LabelUtils.createSection("Taggar");
-  var allTagsDiv = LabelUtils.createTags(label.tags, false);
+  var allTagsDiv = LabelUtils.createTags(label.tags);
   tagSection.appendChild(allTagsDiv);
 
   var tagList = document.createElement("ul");

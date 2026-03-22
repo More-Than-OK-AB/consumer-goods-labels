@@ -107,14 +107,12 @@ var LabelUtils = {
   /**
    * Create tags HTML elements
    * @param {Array} tags - Array of tag objects
-   * @param {boolean} showOnlyOnCard - If true, only show tags where showOnCard is true
    * @returns {HTMLElement} The tags container div
    */
-  createTags: function (tags, showOnlyOnCard) {
+  createTags: function (tags) {
     var tagsDiv = document.createElement("div");
     tagsDiv.className = "tags";
     tags.forEach(function (tag) {
-      if (showOnlyOnCard && !tag.showOnCard) return;
       var span = document.createElement("span");
       span.className = "tag tag-" + tag.id;
       span.textContent = tag.label;

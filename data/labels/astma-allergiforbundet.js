@@ -8,7 +8,6 @@ window.LABELS_DATA.push({
       id: "halsa",
       label: "Hälsa",
       explanation: "Produkter testade och godkända för personer med astma, allergi eller annan överkänslighet.",
-      showOnCard: true
     }
   ],
   cardDescription: "Astma- och Allergiförbundets märkning för produkter som är skonsamma mot luftvägar och hud. Produkterna är testade och godkända av oberoende experter.",

@@ -8,13 +8,11 @@ window.LABELS_DATA.push({
       id: "miljo",
       label: "Miljö",
       explanation: "Strikta krav på att naturresurser sparas, biologisk mångfald skyddas och att giftiga kemikalier fasas ut.",
-      showOnCard: true
     },
     {
       id: "halsa",
       label: "Hälsa",
       explanation: "Krav på att eliminera hälsoskadliga ämnen som cancerframkallande, hormonstörande och allergiframkallande kemikalier.",
-      showOnCard: false
     }
   ],
   cardDescription: "Naturskyddsföreningens egen miljömärkning. Bra Miljöval ställer hårda krav på produkter och tjänster inom bland annat energi, kemikalier, transporter och försäkringar.",

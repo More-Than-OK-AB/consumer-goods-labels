@@ -8,7 +8,6 @@ window.LABELS_DATA.push({
       id: "ursprung",
       label: "Ursprung",
       explanation: "Garanterar att produkten är gjord på 100 % svensk mjölk från svenska Arlagårdar och tillverkad vid ett svenskt Arla-mejeri.",
-      showOnCard: true
     }
   ],
   cardDescription: "Arlas egna ursprungsmärkning för mejeriprodukter. Sverigekannan garanterar att produkten är gjord på 100 % svensk mjölk från svenska Arlagårdar och tillverkad i Sverige.",

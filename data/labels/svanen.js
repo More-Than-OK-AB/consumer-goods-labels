@@ -8,13 +8,11 @@ window.LABELS_DATA.push({
       id: "miljo",
       label: "Miljö",
       explanation: "Livscykelbaserade krav på klimat, kemikalier, biologisk mångfald och cirkulär ekonomi.",
-      showOnCard: true
     },
     {
       id: "halsa",
       label: "Hälsa",
       explanation: "Strikta kemikaliekrav som begränsar hälsoskadliga ämnen i produkter och tjänster.",
-      showOnCard: true
     }
   ],
   cardDescription: "Nordens officiella miljömärkning för varor och tjänster. Svanen granskar produkters miljöpåverkan genom hela livscykeln – från råvara till avfall.",

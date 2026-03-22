@@ -8,19 +8,16 @@ window.LABELS_DATA.push({
       id: "ekologiskt",
       label: "Ekologiskt",
       explanation: "Biodynamisk odling uppfyller alla krav för ekologisk produktion och går betydligt längre med kretsloppsprinciper och preparatanvändning.",
-      showOnCard: true
     },
     {
       id: "miljo",
       label: "Miljö",
       explanation: "Kretsloppsjordbruk med fokus på jordhälsa, biologisk mångfald och slutna näringscykler utan kemiska insatsmedel.",
-      showOnCard: true
     },
     {
       id: "djurvalf",
       label: "Djurvälfärd",
       explanation: "Strikta krav på naturligt beteende, utevistelse, dagsljus och att foder ska komma från den egna gården eller ekologiska källor.",
-      showOnCard: false
     }
   ],
   cardDescription: "Internationell certifiering för biodynamiskt jordbruk – den strängaste formen av ekologisk produktion. Demeter kräver kretsloppsjordbruk och går långt utöver EU:s och KRAV:s ekologiska regler.",
