@@ -32,7 +32,7 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
-        label: "Fairtrade",
+        label: "Jämförelse med Fairtrade",
         text: "Båda märkningarna finns på kaffe, kakao och te, men Fairtrade garanterar ett minimipris som golv för odlaren. Rainforest Alliance har ingen motsvarande prisgaranti — den så kallade Sustainability Differential motsvarade 2024 under en procent av världsmarknadspriset för kakao."
       },
       {

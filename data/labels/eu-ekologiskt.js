@@ -2,7 +2,7 @@ window.LABELS_DATA.push({
   id: "eu-ekologiskt",
   name: "EU-ekologiskt",
   image: "images/eu-organic.png",
-  website: "https://ec.europa.eu/info/food-farming-organics_food-processing-and-marketing/eu-organic-logo_sv",
+  website: "https://agriculture.ec.europa.eu/farming/organic-farming/organic-logo_en",
   tags: [
     {
       id: "ekologiskt",
@@ -35,18 +35,12 @@ window.LABELS_DATA.push({
         text: "KRAV:s regler är strängare än EU:s minimikrav på flera områden, bland annat djurvälfärd och socialt ansvar. Alla KRAV-certifierade produkter uppfyller automatiskt EU-ekologiskt, men inte tvärtom."
       },
       {
-        label: "Nyckelhålet",
-        text: "EU-ekologiskt handlar om produktionsmetod, inte näringsinnehåll. En ekologisk produkt kan ha högt socker- eller fettinnehåll och en Nyckelhålsmärkt produkt kan vara konventionellt producerad."
-      },
-      {
-        label: "Svenskt Sigill",
-        text: "Svenskt Sigill fokuserar på svenskt ursprung och tillåter konventionell produktion. EU-ekologiskt ställer inga krav på ursprungsland men kräver ekologisk produktion. Märkningarna har helt olika fokus."
+        label: "Kontrollmodell i Sverige",
+        text: "Till skillnad från Danmark, där myndigheterna tolkar EU:s ekologiregelverk, lämnas tolkningsarbetet i Sverige till branschen själv. En riksdagsmotion (2024/25:889) har föreslagit att Sverige bör övergå till en statlig modell för att ge svenska producenter samma förutsättningar som i övriga EU."
       }
     ]
   },
   crossLinks: [
-    { name: "KRAV", id: "krav" },
-    { name: "Nyckelhålet", id: "nyckelhalet" },
-    { name: "Svenskt Sigill", id: "svenskt-sigill" }
+    { name: "KRAV", id: "krav" }
   ]
 });
