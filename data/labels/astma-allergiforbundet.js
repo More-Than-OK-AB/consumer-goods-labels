@@ -2,7 +2,7 @@ window.LABELS_DATA.push({
   id: "astma-allergiforbundet",
   name: "Astma- och Allergiförbundet",
   image: "images/astma.webp",
-  website: "https://www.astmaochallergi.se/",
+  website: "https://astmaoallergiforbundet.se/",
   tags: [
     {
       id: "halsa",
@@ -21,8 +21,12 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
-        label: "EU-ekologiskt",
-        text: "Ekologiska produkter kan innehålla naturliga allergener. Astma- och Allergiförbundets märkning testar specifikt för att minimera risk för allergiska reaktioner, oavsett om produkten är ekologisk eller konventionell."
+        label: "Asthma Allergy Nordic",
+        text: "Sedan 2018 har den svenska Svalanmärkningen fasats ut till förmån för Asthma Allergy Nordic — en gemensam nordisk produktmärkning som drivs av astma- och allergiförbunden i Sverige, Norge och Danmark. Kraven är desamma, men logotypen och namnet är nya. Konsumenter kan stöta på båda symbolerna under övergångsperioden."
+      },
+      {
+        label: "Ekologiskt och allergi",
+        text: "Ekologiska produkter kan innehålla naturliga allergener och parfymämnen som eteriska oljor. Astma- och Allergiförbundets märkning testar specifikt för att minimera risk för allergiska reaktioner, oavsett om produkten är ekologisk eller konventionell. En produkt märkt EU-ekologiskt är alltså inte automatiskt säkrare för allergiker."
       }
     ]
   },

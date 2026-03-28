@@ -32,22 +32,21 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
-        label: "Svanen",
-        text: "Svanen ställer miljökrav på färdiga produkter genom hela livscykeln, medan FSC certifierar själva råvarukällan – skogen. En Svanenmärkt pappersprodukt kan innehålla FSC-certifierad råvara. Märkningarna kompletterar varandra men bedömer olika saker."
+        label: "PEFC",
+        text: "FSC och PEFC är de två dominerande skogscertifieringarna globalt. FSC är en internationell medlemsorganisation medan PEFC bygger på nationella standarder som ömsesidigt erkänns. I Sverige har PEFC betydligt mer certifierad areal, men FSC har högre konsumentkännedom (66 %). Miljöorganisationer som WWF och Naturskyddsföreningen föredrar FSC, medan PEFC har starkare förankring bland privata skogsägare."
       },
       {
-        label: "EU Ecolabel",
-        text: "EU Ecolabel granskar produkters totala miljöpåverkan medan FSC specifikt garanterar ansvarsfullt skogsbruk. Båda kan förekomma på samma produkt, exempelvis papper eller hygienartiklar, men med olika fokus."
+        label: "Tillsynskritik",
+        text: "Naturskyddsföreningen lämnade svenska FSC 2010 i protest mot bristande efterlevnad. Kritiker menar att inget skogsbolag har förlorat sin certifiering i Sverige på 30 år trots upprepade anmärkningar. Skogsbolaget SCA lämnade FSC efter år av kritik för avverkning av skyddsvärd skog och konflikter med samiska rättigheter."
       },
       {
         label: "Bra Miljöval",
-        text: "Bra Miljöval kan ställa krav på att papper och skogsprodukter kommer från hållbart skogsbruk. FSC är det specifika certifieringssystemet för själva skogsbruket. Bra Miljöval kan referera till FSC-certifiering som en del av sina kriterier."
+        text: "Bra Miljöval kan kräva att papper och skogsprodukter kommer från hållbart skogsbruk och refererar ibland till FSC-certifiering som en del av sina kriterier. FSC garanterar råvarans ursprung medan Bra Miljöval bedömer hela produktens miljöpåverkan."
       }
     ]
   },
   crossLinks: [
-    { name: "Svanen", id: "svanen" },
-    { name: "EU Ecolabel", id: "eu-ecolabel" },
+    { name: "PEFC", id: "pefc" },
     { name: "Bra Miljöval", id: "bra-miljoval" }
   ]
 });

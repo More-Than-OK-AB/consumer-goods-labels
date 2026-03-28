@@ -27,8 +27,12 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
+        label: "Skillnad mot \"glutenfri\"-text",
+        text: "En förpackning märkt \"glutenfri\" i text följer samma EU-gräns på 20 mg/kg, men det är tillverkaren själv som deklarerar det. Överkorsade Axet innebär att en oberoende tredje part — ControlCert — har verifierat glutenhalten genom laboratorietester och revision av produktionsanläggningen. För konsumenter med celiaki ger symbolen alltså en starkare garanti."
+      },
+      {
         label: "Nyckelhålet",
-        text: "Nyckelhålet fokuserar på näringsinnehåll som fett, socker, salt och fiber. Överkorsade Axet garanterar låg glutenhalt. En glutenfri produkt uppfyller inte automatiskt Nyckelhålets krav, och en Nyckelhålsmärkt produkt kan innehålla gluten. Märkningarna kan kombineras."
+        text: "Nyckelhålet reglerar näringsinnehåll som fett, socker, salt och fiber men tar inte ställning till gluten. Överkorsade Axet garanterar låg glutenhalt men ställer inga näringskrav. En glutenfri produkt kan ha högt sockervärde, och en Nyckelhålsmärkt produkt kan innehålla gluten."
       }
     ]
   },

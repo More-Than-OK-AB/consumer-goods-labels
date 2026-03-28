@@ -42,21 +42,15 @@ window.LABELS_DATA.push({
     items: [
       {
         label: "KRAV",
-        text: "KRAV-certifierade ägg kräver ekologisk produktion med utevistelse och ekologiskt foder. Svenska Ägg tillåter konventionell uppfödning men med höga krav på djurvälfärd, svenskt ursprung och livsmedelssäkerhet. KRAV har strängare krav på ekologisk produktion."
+        text: "KRAV-märkta ägg kräver utevistelse och ekologiskt foder, medan Svenska Ägg-certifierade hönor kan hållas frigående inomhus eller i inredda burar. Utevistelsen i KRAV har dock en baksida: ekologiska ägg har visats innehålla högre halter av PFAS, troligen från fiskmjöl i fodret. Branschen arbetar sedan 2025 med att ersätta fiskmjöl med alternativ som musselmjöl."
       },
       {
-        label: "Från Sverige",
-        text: "Från Sverige garanterar svenskt ursprung för en bred mängd livsmedel. Svenska Ägg garanterar också svenskt ursprung men är specifikt för ägg och ställer dessutom krav på djurvälfärd, livsmedelssäkerhet och foderkvalitet."
-      },
-      {
-        label: "Svensk Fågel",
-        text: "Svensk Fågel är motsvarande branschcertifiering för kyckling och kalkon. Båda märkningarna garanterar svenskt ursprung och branschens egna kvalitetsprogram, men för olika djurslag."
+        label: "Djurvälfärd i praktiken",
+        text: "Certifieringen förbjuder näbbtrimning och har policy för utplockning, men WWF påpekar att det finns mycket kvar att önska kring djurvälfärd för svenska värphöns. De flesta konventionella hönor får aldrig gå utomhus, och beläggningen inomhus kan vara hög även i frigående system."
       }
     ]
   },
   crossLinks: [
-    { name: "KRAV", id: "krav" },
-    { name: "Från Sverige", id: "fran-sverige" },
-    { name: "Svensk Fågel", id: "svensk-fagel" }
+    { name: "KRAV", id: "krav" }
   ]
 });

@@ -2,7 +2,7 @@ window.LABELS_DATA.push({
   id: "fran-sverige",
   name: "Från Sverige",
   image: "images/fran-sverige.png",
-  website: "https://www.fransverige.se/",
+  website: "https://fransverige.se/",
   tags: [
     {
       id: "ursprung",
@@ -27,22 +27,20 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
-        label: "KRAV",
-        text: "KRAV kräver ekologisk produktion men ställer inga krav på svenskt ursprung – KRAV-märkta produkter kan vara importerade. Från Sverige garanterar svenskt ursprung men ställer inga krav på ekologisk produktion. Märkningarna kan kombineras."
-      },
-      {
         label: "Svenskt Sigill",
-        text: "Båda märkningarna garanterar svenskt ursprung, men Svenskt Sigill ställer dessutom krav på miljöansvar, djurvälfärd och livsmedelssäkerhet genom IP-standarden. Från Sverige fokuserar enbart på ursprung och kräver inte specifika produktionsmetoder utöver grundläggande kvalitetscertifiering."
+        text: "Båda garanterar svenskt ursprung, men Svenskt Sigill kräver dessutom att producenten följer IP-standarden med krav på miljöansvar, djurvälfärd och livsmedelssäkerhet. Från Sverige har inga sådana produktionskrav — det räcker att företaget har en grundläggande livsmedelscertifiering. Konsumenter som vill ha mer än bara ursprungsgaranti får alltså mer av Svenskt Sigill."
       },
       {
-        label: "EU-ekologiskt",
-        text: "EU-ekologiskt kräver ekologisk produktion men kan gälla produkter från vilket EU-land som helst. Från Sverige garanterar svenskt ursprung men ställer inga krav på ekologisk produktion. En produkt kan bära båda märkningarna om den uppfyller kraven för var och en."
+        label: "75 %-regeln",
+        text: "I produkter med flera ingredienser behöver bara 75 % av innehållet vara svenskt. Resten kan vara importerat utan att det framgår på förpackningen. Undantaget gäller kött, mjölk, ägg, fågel, fisk och skaldjur som alltid måste vara 100 % svenska."
+      },
+      {
+        label: "Kontrollmodell",
+        text: "Den årliga revisionen är en egenkontroll som företaget själv utför med hjälp av en checklista från Svenskmärkning. Oberoende revisorer gör enbart stickprovskontroller. Modellen vilar alltså i hög grad på företagens egen uppföljning."
       }
     ]
   },
   crossLinks: [
-    { name: "KRAV", id: "krav" },
-    { name: "Svenskt Sigill", id: "svenskt-sigill" },
-    { name: "EU-ekologiskt", id: "eu-ekologiskt" }
+    { name: "Svenskt Sigill", id: "svenskt-sigill" }
   ]
 });

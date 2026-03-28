@@ -41,22 +41,20 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
+        label: "WWF:s köttguide",
+        text: "Konventionell svensk kyckling – det som Svensk Fågels märkning omfattar – fick rött ljus i WWF:s köttguide. Skälet är att WWF kräver långsamväxande raser för godkänd djurvälfärd. Svensk Fågel tillåter snabbväxande raser som kan växa så fort att skelettet inte hänger med, vilket forskare pekar ut som ett av de största djurvälfärdsproblemen inom animalieproduktion. Endast KRAV-märkt och Svenskt Sigill klimatcertifierad kyckling får grönt ljus."
+      },
+      {
         label: "KRAV",
-        text: "KRAV-certifierad kyckling kräver ekologisk produktion med utevistelse och ekologiskt foder. Svensk Fågel tillåter konventionell uppfödning inomhus men ställer krav på djuromsorg, salmonellafrihet och svenskt ursprung. KRAV har strängare djurvälfärdskrav."
+        text: "KRAV-kyckling kräver utevistelse, ekologiskt foder och långsamväxande raser. Svensk Fågel tillåter konventionell uppfödning inomhus med upp till 36 kg per kvadratmeter — ungefär 18 kycklingar på en yta där forskning rekommenderar fem. KRAV-märkt kyckling är det enda alternativet som får grönt ljus i WWF:s köttguide."
       },
       {
-        label: "Från Sverige",
-        text: "Från Sverige garanterar svenskt ursprung för en bred mängd livsmedel. Svensk Fågel garanterar också svenskt ursprung men är specifikt för kyckling och kalkon och ställer dessutom krav på djuromsorg, livsmedelssäkerhet och foderkvalitet."
-      },
-      {
-        label: "Svenskt Sigill",
-        text: "Svenskt Sigill kan certifiera kyckling och ägg med krav på miljö, djurvälfärd och livsmedelssäkerhet. Svensk Fågel är branschens eget program med egna kontrollpunkter. Märkningarna kan förekomma parallellt."
+        label: "Bristande tillsyn",
+        text: "SVT:s granskning visade att länsstyrelserna bara genomförde 26 djurskyddsinspektioner hos slaktkycklingbesättningar under 2024. Avslöjanden om missförhållanden på avelsanläggningar ledde inte till uppföljande besök, trots att myndigheterna bedömde att djurskyddslagen överträtts."
       }
     ]
   },
   crossLinks: [
-    { name: "KRAV", id: "krav" },
-    { name: "Från Sverige", id: "fran-sverige" },
-    { name: "Svenskt Sigill", id: "svenskt-sigill" }
+    { name: "KRAV", id: "krav" }
   ]
 });

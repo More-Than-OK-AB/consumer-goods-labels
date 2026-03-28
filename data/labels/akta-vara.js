@@ -32,21 +32,15 @@ window.LABELS_DATA.push({
     items: [
       {
         label: "Nyckelhålet",
-        text: "Nyckelhålet fokuserar på näringsinnehåll som fett, socker och salt. Äkta Vara fokuserar på att produkten innehåller riktiga råvaror utan onödiga tillsatser. En Ä-märkt produkt uppfyller inte nödvändigtvis Nyckelhålets näringskrav, och vice versa."
+        text: "Nyckelhålet reglerar näringsinnehåll som fett, socker och salt. Äkta Vara reglerar råvaruhalt och tillsatser. En korv med hög kötthalt kan vara Ä-märkt men för salt för Nyckelhålet, och en Nyckelhålsmärkt produkt kan ha låg råvaruhalt om näringskraven uppfylls. Märkningarna mäter alltså helt olika saker."
       },
       {
-        label: "KRAV",
-        text: "KRAV garanterar ekologisk produktion men tar inte ställning till hur stor andel av produkten som utgörs av karaktärsgivande råvaror eller tillsatser. Äkta Vara tar inte ställning till odlingsmetod. Märkningarna kan kombineras."
-      },
-      {
-        label: "EU-ekologiskt",
-        text: "EU-ekologiskt certifierar att råvarorna är ekologiskt producerade men reglerar inte andelen riktiga råvaror i produkten. Äkta Vara kräver hög råvaruhalt men ställer inga krav på ekologisk produktion."
+        label: "Årets Matbluff",
+        text: "Föreningens kampanj Årets Matbluff har visat sig ha konkret effekt — tre av fem finalister 2024 ändrade sina produkter efter kritiken, bland annat Arla som bytte en kritiserad logotyp och Axa som korrigerade vilseledande fruktpåståenden. Föreningen anmäler även produkter till Livsmedelsverket och Konsumentverket."
       }
     ]
   },
   crossLinks: [
-    { name: "Nyckelhålet", id: "nyckelhalet" },
-    { name: "KRAV", id: "krav" },
-    { name: "EU-ekologiskt", id: "eu-ekologiskt" }
+    { name: "Nyckelhålet", id: "nyckelhalet" }
   ]
 });

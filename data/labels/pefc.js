@@ -22,21 +22,15 @@ window.LABELS_DATA.push({
     items: [
       {
         label: "FSC",
-        text: "FSC och PEFC är de två dominerande skogscertifieringarna globalt. Båda kräver hållbart skogsbruk men har olika organisationsstruktur: FSC är en internationell medlemsorganisation medan PEFC bygger på nationella standarder som ömsesidigt erkänns. I Sverige är PEFC mer utbrett sett till certifierad areal, medan FSC har högre konsumentkännedom."
+        text: "FSC och PEFC är de två dominerande skogscertifieringarna globalt. I Sverige har PEFC betydligt mer certifierad areal (16,4 miljoner hektar), medan FSC har högre konsumentkännedom. Miljöorganisationer som WWF och Naturskyddsföreningen föredrar FSC och anser inte att PEFC:s krav räcker. PEFC har å andra sidan starkare förankring bland privata skogsägare genom sin nationella standardmodell."
       },
       {
-        label: "Svanen",
-        text: "Svanen ställer miljökrav på färdiga produkter genom hela livscykeln, medan PEFC certifierar råvarukällan – skogen. En Svanenmärkt pappersprodukt kan innehålla PEFC-certifierad råvara. Märkningarna kompletterar varandra."
-      },
-      {
-        label: "EU Ecolabel",
-        text: "EU Ecolabel granskar produkters totala miljöpåverkan medan PEFC specifikt garanterar hållbart skogsbruk. Båda kan förekomma på samma produkt, exempelvis papper eller hygienartiklar."
+        label: "Miljökritik",
+        text: "Greenpeace och flera miljöorganisationer har rapporterat att PEFC-certifierad skog i Sverige tillåter avverkning av nyckelbiotoper och hotade ekosystem. PEFC medger att skogsägare i undantagsfall kan avverka nyckelbiotoper om de har mer än fem procent skyddsvärd skog, men kritiker menar att detta undergräver certifieringens trovärdighet."
       }
     ]
   },
   crossLinks: [
-    { name: "FSC", id: "fsc" },
-    { name: "Svanen", id: "svanen" },
-    { name: "EU Ecolabel", id: "eu-ecolabel" }
+    { name: "FSC", id: "fsc" }
   ]
 });
