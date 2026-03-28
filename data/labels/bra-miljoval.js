@@ -27,7 +27,11 @@ window.LABELS_DATA.push({
     items: [
       {
         label: "Svanen",
-        text: "Både Bra Miljöval och Svanen är miljömärkningar för icke-livsmedel, men Bra Miljöval drivs av en miljöorganisation medan Svanen är en nordisk statlig märkning. Bra Miljöval anses ofta ha strängare kemikaliekrav. Produktområdena överlappar delvis men Bra Miljöval täcker även energi, transporter och försäkringar."
+        text: "Båda är typ 1-märkningar (ISO 14024) för icke-livsmedel, men Bra Miljöval drivs av Naturskyddsföreningen medan Svanen är en nordisk statlig märkning. Bra Miljöval anses ofta ha strängare kemikaliekrav och täcker unika områden som energi, transporter och försäkringar."
+      },
+      {
+        label: "Kärnkraft och energi",
+        text: "Bra Miljöval kräver förnybar energi och godkänner inte kärnkraft. SJ lämnade märkningen 2024 efter 30 år för att istället använda fossilfri el inklusive kärnkraft. Flera elbolag har också lämnat och ifrågasatt om systemet med ursprungsgarantier faktiskt levererar klimatnytta."
       }
     ]
   },
