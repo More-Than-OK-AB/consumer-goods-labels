@@ -26,12 +26,12 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
-        label: "Fairtrade",
-        text: "Fairtrade fokuserar på rättvisa handelsvillkor för råvaruproducenter i utvecklingsländer. Svanen fokuserar på miljöpåverkan genom livscykeln. De kan teoretiskt förekomma på samma produkt, till exempel textilier, men med olika fokusområden."
+        label: "EU Ecolabel",
+        text: "Båda är typ 1-märkningar enligt ISO 14024 och administreras i Sverige av samma organisation (Miljömärkning Sverige AB). Svanen ställer ofta strängare krav — bland annat på emballage, fabrik och kvalitetsledningssystem — medan EU Ecolabel har gemensamma minimikrav för hela EU."
       }
     ]
   },
   crossLinks: [
-    { name: "Fairtrade", id: "fairtrade" }
+    { name: "EU Ecolabel", id: "eu-ecolabel" }
   ]
 });
