@@ -37,6 +37,10 @@ window.LABELS_DATA.push({
       {
         label: "Kontrollmodell i Sverige",
         text: "Till skillnad från Danmark, där myndigheterna tolkar EU:s ekologiregelverk, lämnas tolkningsarbetet i Sverige till branschen själv. En riksdagsmotion (2024/25:889) har föreslagit att Sverige bör övergå till en statlig modell för att ge svenska producenter samma förutsättningar som i övriga EU."
+      },
+      {
+        label: "Koppar som bekämpningsmedel",
+        text: "EU-ekologiskt tillåter kopparbaserade bekämpningsmedel med en gräns på 4 kg per hektar och år. Koppar används främst vid odling av vindruvor, potatis, äpplen och tomater. Europeiska kemikaliemyndigheten klassar koppar som cancerframkallande, och EFSA har flaggat risker för jordbrukare, bin och markorganismer. I Sverige är koppar inte godkänt som bekämpningsmedel, men importerade EU-ekologiska produkter kan ha odlats med koppar."
       }
     ]
   },

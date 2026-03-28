@@ -57,6 +57,10 @@ window.LABELS_DATA.push({
       {
         label: "Regelskärpning 2026",
         text: "KRAV har skärpt regelverket på flera områden: snabbväxande kycklingraser är förbjudna, fiskmjöl i foder fasas ut för grisar och höns, och möjligheten till distansrevisioner har tagits bort – alla kontroller måste nu ske fysiskt på plats."
+      },
+      {
+        label: "Koppar vid import",
+        text: "KRAV förbjuder kopparbaserade bekämpningsmedel i svensk odling men har inga strängare regler än EU för importerade produkter. Importerad KRAV-märkt frukt och vin kan därför ha odlats med koppar, som EU tillåter upp till 4 kg per hektar och år."
       }
     ]
   },
