@@ -37,16 +37,15 @@ window.LABELS_DATA.push({
     items: [
       {
         label: "MSC",
-        text: "MSC certifierar vildfångad sjömat medan ASC certifierar odlad sjömat. Märkningarna är systermärkningar som kompletterar varandra och delar spårbarhetsstandard (Chain of Custody), men de bedömer helt olika typer av produktion."
+        text: "ASC och MSC är systermärkningar som delar spårbarhetsstandard (Chain of Custody). ASC certifierar odlad sjömat, MSC vildfångad. Produkter kan bära båda märkena om leveranskedjan hanterar båda typerna."
       },
       {
-        label: "KRAV",
-        text: "KRAV kan certifiera odlad fisk enligt ekologiska principer med fokus på ekologiskt foder och naturliga förhållanden. ASC ställer inte krav på ekologisk produktion men har breda krav på miljö, djurvälfärd och socialt ansvar. Certifieringarna överlappar delvis men har olika utgångspunkter."
+        label: "Industripåverkan",
+        text: "Miljöorganisationer har kritiserat ASC:s nya odlingsstandard för att gynna industrin framför miljön. Certifierade laxodlingar i Norge och Chile har opererats utanför tillstånd och i skyddade naturområden — Salmar fick ASC-certifiering för en odling mitt i Froans naturreservat. ASC har också kritiserats för bristande åtgärder mot för höga lusnivåer på laxodlingar."
       }
     ]
   },
   crossLinks: [
-    { name: "MSC", id: "msc" },
-    { name: "KRAV", id: "krav" }
+    { name: "MSC", id: "msc" }
   ]
 });
