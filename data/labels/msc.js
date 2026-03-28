@@ -2,7 +2,7 @@ window.LABELS_DATA.push({
   id: "msc",
   name: "MSC",
   image: "images/msc.webp",
-  website: "https://www.msc.org/svenska/",
+  website: "https://www.msc.org/sv",
   tags: [
     {
       id: "hav-fiske",
@@ -36,17 +36,16 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
-        label: "KRAV",
-        text: "KRAV kan certifiera fisk men med fokus på ekologisk produktion och odlad fisk. MSC certifierar enbart vildfångad sjömat utifrån hållbarhetskriterier. KRAV-märkt fisk och MSC-märkt fisk bedöms utifrån olika principer."
+        label: "Intressekonflikt",
+        text: "Certifieringsorganen anlitas och betalas av det fiske som söker certifiering, inte av MSC. WWF har visat att detta kan påverka opartiskheten — vid certifieringen av atlantisk blåfenad tonfisk hade bedömaren i förväg försäkrat fisket om godkännande. Dessutom kommer nästan 89 % av MSC:s egna intäkter från licensavgifter på märkta produkter, vilket skapar en ekonomisk drivkraft att behålla fisken i programmet."
       },
       {
-        label: "Nyckelhålet",
-        text: "Nyckelhålet bedömer näringsinnehåll medan MSC bedömer fiskemetodernas hållbarhet. En MSC-märkt fiskprodukt kan samtidigt vara Nyckelhålsmärkt om den uppfyller näringskraven – märkningarna kompletterar varandra."
+        label: "Kritik mot certifierade fisken",
+        text: "Forskare har visat att 83 % av MSC-certifierade fisken använder storskaliga metoder som bottentrålning och snörpvad, vilket kan skada marina ekosystem och ge hög bifångst. MSC har också lättat på vissa krav över tid — till exempel fördubblades tiden för att uppfylla villkor kring fiskestrategi från 5 till 10 år, och vissa fisken har varit certifierade i närmare 20 år utan fungerande förvaltningsplan."
       }
     ]
   },
   crossLinks: [
-    { name: "KRAV", id: "krav" },
-    { name: "Nyckelhålet", id: "nyckelhalet" }
+    { name: "ASC", id: "asc" }
   ]
 });
