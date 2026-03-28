@@ -37,17 +37,20 @@ window.LABELS_DATA.push({
   notes: {
     items: [
       {
-        label: "KRAV",
-        text: "KRAV:s regler utgör en grundförutsättning för Demetercertifiering – alla Demetergårdar uppfyller KRAV:s krav. Demeter går dock betydligt längre med krav på kretsloppsjordbruk, biodynamiska preparat och striktare djurhållningsregler."
+        label: "EU-ekologiskt",
+        text: "Demeter uppfyller alla EU-krav för ekologisk produktion och en Demetercertifierad produkt bär alltid även EU-lövet. Premiumet man betalar för Demeter handlar om de biodynamiska tilläggen, inte om en annan ekologisk grundnivå."
       },
       {
-        label: "EU-ekologiskt",
-        text: "EU-ekologiskt är miniminivån för ekologisk produktion. Demeter uppfyller alla EU-krav men ställer väsentligt högre krav. En Demetercertifierad produkt bär alltid även EU-lövet."
+        label: "Biodynamiska metoder",
+        text: "Demeter bygger på Rudolf Steiners biodynamiska principer från 1920-talet, som inkluderar speciella preparat och hänsyn till måncykler vid sådd och skörd. Dessa metoder saknar vetenskapligt stöd — forskning har inte kunnat påvisa skillnader i resultat jämfört med annan ekologisk odling."
+      },
+      {
+        label: "Koppar",
+        text: "Demeter har strängare kopparregler än EU-ekologiskt: max 3 kg per hektar och år (mot EU:s 4 kg) och enbart på fleråriga grödor som vindruvor — inte på ettåriga som potatis eller tomater."
       }
     ]
   },
   crossLinks: [
-    { name: "KRAV", id: "krav" },
     { name: "EU-ekologiskt", id: "eu-ekologiskt" }
   ]
 });
