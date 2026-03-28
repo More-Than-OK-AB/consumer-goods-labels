@@ -22,7 +22,7 @@ All labels on this website must conform to the structure defined in [label-spec.
 Before committing, verify the following manually using `npx serve .` (or equivalent local server):
 
 1. **Index page loads** — open the root URL; all label cards should render with correct images, names, and tags.
-2. **Label detail page** — click any label card; the detail page should render with description, certification, oversight, and notes sections fully populated.
+2. **Label detail page** — click any label card; the detail page should render with description, credibility, and notes sections fully populated.
 3. **Cross-links** — on a label detail page, click at least one cross-link; it should navigate to the correct label's detail page.
 4. **Browser console** — no JS errors on either the index page or a label detail page.
 5. **Page title and meta** — the `<title>` tag and any visible heading should reflect the correct label name on the detail page.

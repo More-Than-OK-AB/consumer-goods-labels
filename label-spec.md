@@ -4,7 +4,7 @@ Each label page should contain the following sections:
 
 ## 1. Short description
 What the label is, its purpose, and which product categories it covers.
-A link to the official website for the label.
+A link to the official website for the label. Verify that the link still works — official URLs change over time.
 
 ## 2. Tags
 One or more of the following categories that the label relates to:
