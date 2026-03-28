@@ -2,7 +2,7 @@ window.LABELS_DATA.push({
   id: "eu-ecolabel",
   name: "EU Ecolabel",
   image: "images/eu-ecolabel.webp",
-  website: "https://ec.europa.eu/ecat/",
+  website: "https://environment.ec.europa.eu/topics/circular-economy/eu-ecolabel-home_en",
   tags: [
     {
       id: "miljo",
@@ -27,16 +27,11 @@ window.LABELS_DATA.push({
     items: [
       {
         label: "Svanen",
-        text: "Både EU Ecolabel och Svanen är typ 1-miljömärkningar för icke-livsmedel med livscykelbaserade kriterier. Svanen är en nordisk märkning som ofta anses ha strängare krav inom vissa områden, medan EU Ecolabel gäller i hela EU. Båda administreras i Sverige av Miljömärkning Sverige AB."
-      },
-      {
-        label: "Bra Miljöval",
-        text: "Bra Miljöval drivs av Naturskyddsföreningen och täcker delvis andra produktområden som energi, transporter och försäkringar. EU Ecolabel har ett bredare produktsortiment inom konsumentvaror men saknar Bra Miljövals fokus på tjänstesektorn."
+        text: "Båda är typ 1-märkningar (ISO 14024) och administreras i Sverige av samma organisation, Miljömärkning Sverige AB. Svanen ställer ofta strängare krav — bland annat på emballage och fabrik — medan EU Ecolabel har gemensamma minimikrav som gäller i hela EU."
       }
     ]
   },
   crossLinks: [
-    { name: "Svanen", id: "svanen" },
-    { name: "Bra Miljöval", id: "bra-miljoval" }
+    { name: "Svanen", id: "svanen" }
   ]
 });
