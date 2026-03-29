@@ -37,9 +37,9 @@
     header.appendChild(img);
   }
 
-  var h1 = document.createElement("h1");
-  h1.textContent = label.name;
-  header.appendChild(h1);
+  var h2 = document.createElement("h2");
+  h2.textContent = label.name;
+  header.appendChild(h2);
 
   var headerTags = LabelUtils.createTags(label.tags);
   header.appendChild(headerTags);
