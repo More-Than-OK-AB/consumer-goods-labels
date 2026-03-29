@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Svenska livsmedelsmärkningar</title>
+  <title>Jämför märkningar - Svenska livsmedelsmärkningar</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,7 +16,18 @@
     </nav>
   </header>
 
-  <main class="container" id="label-content">
+  <main class="container" id="compare-content">
+    <h2 class="compare-title">Jämför märkningar</h2>
+    <p class="intro">Välj två eller tre märkningar för att jämföra dem sida vid sida.</p>
+
+    <div class="compare-selectors" id="compare-selectors">
+    </div>
+
+    <div class="compare-quick-links" id="quick-links">
+    </div>
+
+    <div id="compare-table-container">
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -49,6 +60,6 @@
   <script src="data/labels/akta-vara.js"></script>
   <script src="data/labels/pefc.js"></script>
   <script src="data/labels/overkorsade-axet.js"></script>
-  <script src="js/render-label.js"></script>
+  <script src="js/render-compare.js"></script>
 </body>
 </html>
