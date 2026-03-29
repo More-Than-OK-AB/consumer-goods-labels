@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="16" fill="#2e6b3e"/>
+  <text x="100" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#fff">IP</text>
+  <text x="100" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#fff">SIGILL</text>
+</svg>
