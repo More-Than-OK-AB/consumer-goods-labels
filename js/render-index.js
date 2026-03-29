@@ -15,7 +15,7 @@
   });
 
   var tagIds = Object.keys(tagMap);
-  var activeFilter = null;
+  var activeFilters = [];
 
   // Render filter buttons
   var allaBtn = document.createElement("button");
@@ -23,7 +23,7 @@
   allaBtn.className = "filter-btn filter-btn-alla active";
   allaBtn.textContent = "Alla";
   allaBtn.addEventListener("click", function () {
-    activeFilter = null;
+    activeFilters = [];
     updateFilters();
   });
   filterBar.appendChild(allaBtn);
@@ -35,7 +35,12 @@
     btn.textContent = tagMap[tagId];
     btn.dataset.tag = tagId;
     btn.addEventListener("click", function () {
-      activeFilter = activeFilter === tagId ? null : tagId;
+      var idx = activeFilters.indexOf(tagId);
+      if (idx !== -1) {
+        activeFilters.splice(idx, 1);
+      } else {
+        activeFilters.push(tagId);
+      }
       updateFilters();
     });
     filterBar.appendChild(btn);
@@ -48,7 +53,11 @@
     card.href = "label?id=" + encodeURIComponent(label.id);
     card.className = "label-card";
     card.dataset.tags = label.tags.map(function (t) { return t.id; }).join(",");
-    card.dataset.name = label.name.toLowerCase();
+
+    // Build searchable text: name + description + tag labels
+    var tagLabels = label.tags.map(function (t) { return t.label; }).join(" ");
+    var descText = Array.isArray(label.description) ? label.description.join(" ") : (label.description || "");
+    card.dataset.searchText = (label.name + " " + label.cardDescription + " " + descText + " " + tagLabels).toLowerCase();
 
     if (label.image) {
       var img = LabelUtils.createImage(label.image, label.name + " logotyp", "card-image");
@@ -84,15 +93,18 @@
     var query = searchInput ? searchInput.value.toLowerCase().trim() : "";
 
     // Update button states
-    allaBtn.classList.toggle("active", activeFilter === null);
+    allaBtn.classList.toggle("active", activeFilters.length === 0);
     filterBar.querySelectorAll("[data-tag]").forEach(function (btn) {
-      btn.classList.toggle("active", btn.dataset.tag === activeFilter);
+      btn.classList.toggle("active", activeFilters.indexOf(btn.dataset.tag) !== -1);
     });
 
     // Filter cards
     cards.forEach(function (card) {
-      var matchesTag = activeFilter === null || card.dataset.tags.split(",").indexOf(activeFilter) !== -1;
-      var matchesSearch = !query || card.dataset.name.indexOf(query) !== -1;
+      var cardTags = card.dataset.tags.split(",");
+      var matchesTag = activeFilters.length === 0 || activeFilters.every(function (f) {
+        return cardTags.indexOf(f) !== -1;
+      });
+      var matchesSearch = !query || card.dataset.searchText.indexOf(query) !== -1;
       card.classList.toggle("hidden", !(matchesTag && matchesSearch));
     });
   }
