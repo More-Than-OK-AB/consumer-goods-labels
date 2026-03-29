@@ -31,4 +31,4 @@ If all checks pass, commit with a clear message and push to `origin/main`.
 
 ## Commit and push
 
-After changes have been validated, always commit and push to `origin/main`.
+After changes have been validated, commit your work locally. Do NOT push to `origin/main` without explicit board approval. Instead, after committing locally, update your Paperclip task with a comment describing what changed and request board review before pushing. Only push after you receive approval from the board or CEO.
