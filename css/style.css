@@ -42,6 +42,12 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 /* ===== Header ===== */
 .site-header {
   background: var(--color-primary);
@@ -151,6 +157,11 @@ a:hover {
   border-color: var(--color-text-muted);
 }
 
+.filter-btn:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 .filter-btn-alla.active {
   background: var(--color-primary);
   color: #fff;
@@ -208,9 +219,15 @@ a:hover {
   flex-direction: column;
 }
 
-.label-card:hover {
+.label-card:hover,
+.label-card:focus-visible {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   transform: translateY(-2px);
+}
+
+.label-card:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .label-card h2 {
@@ -314,7 +331,7 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.label-header h1 {
+.label-header h2 {
   font-size: 1.8rem;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
@@ -340,7 +357,7 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
-.section h2 {
+.section h3 {
   font-size: 1.15rem;
   margin-bottom: 0.75rem;
   color: var(--color-primary);
@@ -472,10 +489,16 @@ a:hover {
   transition: background 0.15s, border-color 0.15s;
 }
 
-.compare-quick-btn:hover {
+.compare-quick-btn:hover,
+.compare-quick-btn:focus-visible {
   border-color: var(--color-primary);
   background: var(--color-primary-light);
   text-decoration: none;
+}
+
+.compare-quick-btn:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .compare-hint {
@@ -561,7 +584,7 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .label-header h1 {
+  .label-header h2 {
     font-size: 1.4rem;
   }
 
