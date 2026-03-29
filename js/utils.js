@@ -11,9 +11,9 @@ var LabelUtils = {
   createSection: function (title) {
     var section = document.createElement("div");
     section.className = "section";
-    var h2 = document.createElement("h2");
-    h2.textContent = title;
-    section.appendChild(h2);
+    var h3 = document.createElement("h3");
+    h3.textContent = title;
+    section.appendChild(h3);
     return section;
   },
 
