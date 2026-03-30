@@ -37,6 +37,10 @@ public/
   images/       Label logos and favicon
 ```
 
+## Deployment
+
+Merging to `main` triggers the GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds the site and deploys it to GitHub Pages automatically. No manual steps required. No environment variables are needed for the build.
+
 ## Adding or updating labels
 
 Label data lives in `src/data/labels.ts`. All label content must conform to [label-spec.md](label-spec.md).
