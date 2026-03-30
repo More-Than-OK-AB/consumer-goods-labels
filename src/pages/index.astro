@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import LabelGrid from '../components/LabelGrid'
-import { labels } from '../data/labels'
 
 const title = 'Svenska livsmedelsmärkningar – guide till märkningar på konsumentvaror'
 const description = 'Komplett guide till svenska livsmedelsmärkningar – KRAV, Nyckelhålet, Fairtrade, EU-ekologiskt, Svanen och många fler. Lär dig vad märkningarna betyder och hur de kontrolleras.'
@@ -31,5 +30,5 @@ const description = 'Komplett guide till svenska livsmedelsmärkningar – KRAV,
     hur de förhåller sig till varandra.
   </p>
 
-  <LabelGrid labels={labels} client:load />
+  <LabelGrid client:load />
 </Layout>

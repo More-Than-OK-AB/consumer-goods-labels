@@ -1,9 +1,5 @@
 import { useState, useMemo } from 'react'
-import type { Label } from '../data/labels'
-
-interface Props {
-  labels: Label[]
-}
+import { labels } from '../data/labels'
 
 const TAG_STYLES: Record<string, { bg: string; text: string; activeBg: string; border: string }> = {
   miljo: { bg: '#dff0d8', text: '#2d6a1e', activeBg: '#2d6a1e', border: '#dff0d8' },
@@ -28,7 +24,7 @@ function TagBadge({ tagId, label }: { tagId: string; label: string }) {
   )
 }
 
-export default function LabelGrid({ labels }: Props) {
+export default function LabelGrid() {
   const [search, setSearch] = useState('')
   const [activeFilters, setActiveFilters] = useState<string[]>([])
 

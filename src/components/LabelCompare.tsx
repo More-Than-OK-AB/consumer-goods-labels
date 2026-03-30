@@ -1,9 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import type { Label } from '../data/labels'
-
-interface Props {
-  labels: Label[]
-}
+import { labels } from '../data/labels'
 
 const POPULAR_COMPARISONS = [
   { title: 'KRAV vs EU-ekologiskt', ids: ['krav', 'eu-ekologiskt'] },
@@ -20,7 +16,7 @@ function getLabelById(labels: Label[], id: string): Label | undefined {
   return labels.find((l) => l.id === id)
 }
 
-export default function LabelCompare({ labels }: Props) {
+export default function LabelCompare() {
   const [selectedIds, setSelectedIds] = useState<[string, string, string]>(['', '', ''])
 
   // Read URL params on mount

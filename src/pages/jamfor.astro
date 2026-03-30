@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import LabelCompare from '../components/LabelCompare'
-import { labels } from '../data/labels'
 ---
 
 <Layout
@@ -15,5 +14,5 @@ import { labels } from '../data/labels'
     Välj två eller tre märkningar för att jämföra dem sida vid sida.
   </p>
 
-  <LabelCompare labels={labels} client:load />
+  <LabelCompare client:load />
 </Layout>
