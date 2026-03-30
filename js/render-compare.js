@@ -47,6 +47,7 @@
       var select = document.createElement("select");
       select.className = "compare-select";
       select.dataset.index = i;
+      select.setAttribute("aria-label", i < 2 ? "Välj märkning " + (i + 1) : "Välj en tredje märkning (valfritt)");
 
       var defaultOpt = document.createElement("option");
       defaultOpt.value = "";
@@ -138,17 +139,20 @@
 
     var table = document.createElement("table");
     table.className = "compare-table";
+    table.setAttribute("aria-label", "Jämförelsetabell för märkningar");
 
     // Header row with logos and names
     var thead = document.createElement("thead");
     var headerRow = document.createElement("tr");
     var cornerTh = document.createElement("th");
     cornerTh.className = "compare-corner";
+    cornerTh.setAttribute("scope", "col");
     headerRow.appendChild(cornerTh);
 
     selected.forEach(function (label) {
       var th = document.createElement("th");
       th.className = "compare-label-header";
+      th.setAttribute("scope", "col");
       if (label.image) {
         var img = document.createElement("img");
         img.src = label.image;
@@ -219,6 +223,7 @@
     var tr = document.createElement("tr");
     var th = document.createElement("th");
     th.className = "compare-row-label";
+    th.setAttribute("scope", "row");
     th.textContent = rowLabel;
     tr.appendChild(th);
 
@@ -242,6 +247,7 @@
     var tr = document.createElement("tr");
     var th = document.createElement("th");
     th.className = "compare-row-label";
+    th.setAttribute("scope", "row");
     th.textContent = rowLabel;
     tr.appendChild(th);
 

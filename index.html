@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Svenska livsmedelsmärkningar</title>
+  <title>Svenska livsmedelsmärkningar – guide till märkningar på konsumentvaror</title>
+  <meta name="description" content="Komplett guide till svenska livsmedelsmärkningar – KRAV, Nyckelhålet, Fairtrade, EU-ekologiskt, Svanen och många fler. Lär dig vad märkningarna betyder och hur de kontrolleras.">
+  <link rel="canonical" href="https://markningar.se/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://markningar.se/">
+  <meta property="og:title" content="Svenska livsmedelsmärkningar – guide till märkningar på konsumentvaror">
+  <meta property="og:description" content="Komplett guide till svenska livsmedelsmärkningar – KRAV, Nyckelhålet, Fairtrade, EU-ekologiskt, Svanen och många fler. Lär dig vad märkningarna betyder och hur de kontrolleras.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Svenska livsmedelsmärkningar">
+  <meta name="twitter:description" content="Komplett guide till svenska livsmedelsmärkningar – KRAV, Nyckelhålet, Fairtrade, EU-ekologiskt och fler.">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Svenska livsmedelsmärkningar",
+    "url": "https://markningar.se/",
+    "description": "Komplett guide till svenska livsmedelsmärkningar och certifieringar på konsumentvaror.",
+    "inLanguage": "sv",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://markningar.se/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -24,9 +51,9 @@
       hur de förhåller sig till varandra.
     </p>
 
-    <input type="text" id="search-input" class="search-input" placeholder="Sök märkning...">
+    <input type="text" id="search-input" class="search-input" placeholder="Sök märkning..." aria-label="Sök märkning">
 
-    <div class="filter-bar" id="filter-bar">
+    <div class="filter-bar" id="filter-bar" role="group" aria-label="Filtrera efter kategori">
     </div>
 
     <div class="label-grid">

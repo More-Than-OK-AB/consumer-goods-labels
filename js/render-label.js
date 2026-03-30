@@ -21,6 +21,41 @@
 
   document.title = label.name + " \u2013 Svenska livsmedelsm\u00e4rkningar";
 
+  var pageUrl = "https://markningar.se/label?id=" + encodeURIComponent(label.id);
+  var metaDesc = label.cardDescription || "";
+
+  var descTag = document.querySelector('meta[name="description"]');
+  if (descTag) descTag.setAttribute("content", metaDesc);
+
+  var canonicalTag = document.querySelector('link[rel="canonical"]');
+  if (canonicalTag) canonicalTag.setAttribute("href", pageUrl);
+
+  var ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.setAttribute("content", label.name + " \u2013 Svenska livsmedelsm\u00e4rkningar");
+
+  var ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc) ogDesc.setAttribute("content", metaDesc);
+
+  var ogUrl = document.querySelector('meta[property="og:url"]');
+  if (ogUrl) ogUrl.setAttribute("content", pageUrl);
+
+  var ldScript = document.createElement("script");
+  ldScript.type = "application/ld+json";
+  ldScript.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": label.name,
+    "description": metaDesc,
+    "url": pageUrl,
+    "inLanguage": "sv",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Svenska livsmedelsmärkningar",
+      "url": "https://markningar.se/"
+    }
+  });
+  document.head.appendChild(ldScript);
+
   // Back link
   var backLink = document.createElement("a");
   backLink.href = "index.html";
@@ -37,9 +72,9 @@
     header.appendChild(img);
   }
 
-  var h1 = document.createElement("h1");
-  h1.textContent = label.name;
-  header.appendChild(h1);
+  var h2 = document.createElement("h2");
+  h2.textContent = label.name;
+  header.appendChild(h2);
 
   var headerTags = LabelUtils.createTags(label.tags);
   header.appendChild(headerTags);
