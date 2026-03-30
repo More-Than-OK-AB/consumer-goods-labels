@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro'
+import LabelGrid from '../components/LabelGrid'
+import { labels } from '../data/labels'
+
+const title = 'Svenska livsmedelsmärkningar – guide till märkningar på konsumentvaror'
+const description = 'Komplett guide till svenska livsmedelsmärkningar – KRAV, Nyckelhålet, Fairtrade, EU-ekologiskt, Svanen och många fler. Lär dig vad märkningarna betyder och hur de kontrolleras.'
+---
+
+<Layout title={title} description={description} canonicalPath="/">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Svenska livsmedelsmärkningar",
+    "url": "https://markningar.se/",
+    "description": "Komplett guide till svenska livsmedelsmärkningar och certifieringar på konsumentvaror.",
+    "inLanguage": "sv",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://markningar.se/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  })} />
+
+  <p class="mb-6 text-[#5a5a5a]">
+    Det finns många olika märkningar på livsmedel och konsumentvaror i Sverige.
+    Här samlar vi information om vad de innebär, hur certifieringen går till och
+    hur de förhåller sig till varandra.
+  </p>
+
+  <LabelGrid labels={labels} client:load />
+</Layout>
