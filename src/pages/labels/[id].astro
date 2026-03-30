@@ -1,0 +1,166 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { labels, getLabelById } from '../../data/labels'
+import type { Label } from '../../data/labels'
+
+export function getStaticPaths() {
+  return labels.map((label) => ({
+    params: { id: label.id },
+  }))
+}
+
+const { id } = Astro.params
+const label = getLabelById(id!) as Label
+
+const TAG_STYLES: Record<string, { bg: string; text: string }> = {
+  miljo: { bg: '#dff0d8', text: '#2d6a1e' },
+  halsa: { bg: '#d9edf7', text: '#1a5276' },
+  djurvalf: { bg: '#fce8d5', text: '#8a4b1a' },
+  ursprung: { bg: '#f5e6cc', text: '#7d5a2f' },
+  ekologiskt: { bg: '#e8f2eb', text: '#2e6b3e' },
+  'socialt-ansvar': { bg: '#f0e0f0', text: '#6b2e6b' },
+  'hav-fiske': { bg: '#d6eaf8', text: '#1a3d5c' },
+}
+
+const title = `${label.name} – Svenska livsmedelsmärkningar`
+const description = label.cardDescription
+
+// Build cross-link lookup for rendering in description text
+const crossLinkMap = new Map(label.crossLinks.map((cl) => [cl.name, cl.id]))
+
+// Simple function to linkify first mention of crossLinks in a text string
+function linkifyText(text: string): string {
+  let result = text
+  for (const [name, linkId] of crossLinkMap) {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    const regex = new RegExp(`(${escaped})`)
+    result = result.replace(regex, `<a href="/labels/${linkId}" class="text-[#2e6b3e] hover:underline">$1</a>`)
+  }
+  return result
+}
+---
+
+<Layout title={title} description={description} canonicalPath={`/labels/${label.id}`} ogType="article">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": label.name,
+    "description": label.cardDescription,
+    "url": `https://markningar.se/labels/${label.id}`,
+    "inLanguage": "sv",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Svenska livsmedelsmärkningar",
+      "url": "https://markningar.se"
+    }
+  })} />
+
+  <a href="/" class="inline-block mb-6 text-sm font-medium text-[#2e6b3e] hover:underline">← Tillbaka</a>
+
+  <!-- Header -->
+  <div class="mb-8">
+    <img
+      src={`/${label.image}`}
+      alt={label.name}
+      class="max-w-[180px] h-auto mb-4 rounded-lg"
+    />
+    <h2 class="text-3xl font-bold text-[#2e6b3e] mb-2">{label.name}</h2>
+    <div class="flex flex-wrap gap-1.5 mt-3">
+      {label.tags.map((tag) => {
+        const style = TAG_STYLES[tag.id]
+        return (
+          <span
+            style={style ? `background: ${style.bg}; color: ${style.text}` : ''}
+            class="inline-block text-xs font-semibold px-2 py-0.5 rounded-full uppercase tracking-wide"
+          >
+            {tag.label}
+          </span>
+        )
+      })}
+    </div>
+  </div>
+
+  <!-- Beskrivning -->
+  <section class="bg-white border border-[#e0ddd8] rounded-lg p-6 mb-5 shadow-sm">
+    <h3 class="text-lg font-semibold text-[#2e6b3e] mb-3 pb-2 border-b-2 border-[#e8f2eb]">Beskrivning</h3>
+    {label.description.map((para) => (
+      <p class="text-sm mb-3 last:mb-0" set:html={linkifyText(para)} />
+    ))}
+    <p class="text-sm mt-3">
+      <a href={label.website} target="_blank" rel="noopener noreferrer" class="text-[#2e6b3e] hover:underline font-medium">
+        Officiell webbplats →
+      </a>
+    </p>
+  </section>
+
+  <!-- Taggar med förklaringar -->
+  <section class="bg-white border border-[#e0ddd8] rounded-lg p-6 mb-5 shadow-sm">
+    <h3 class="text-lg font-semibold text-[#2e6b3e] mb-3 pb-2 border-b-2 border-[#e8f2eb]">Kategorier</h3>
+    <div class="flex flex-wrap gap-1.5 mb-4">
+      {label.tags.map((tag) => {
+        const style = TAG_STYLES[tag.id]
+        return (
+          <span
+            style={style ? `background: ${style.bg}; color: ${style.text}` : ''}
+            class="inline-block text-xs font-semibold px-2 py-0.5 rounded-full uppercase tracking-wide"
+          >
+            {tag.label}
+          </span>
+        )
+      })}
+    </div>
+    <ul class="pl-5 list-disc space-y-2">
+      {label.tags.map((tag) => (
+        <li class="text-sm">
+          <strong>{tag.label}:</strong> {tag.explanation}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Trovärdighet & kontroll -->
+  <section class="bg-white border border-[#e0ddd8] rounded-lg p-6 mb-5 shadow-sm">
+    <h3 class="text-lg font-semibold text-[#2e6b3e] mb-3 pb-2 border-b-2 border-[#e8f2eb]">Trovärdighet & kontroll</h3>
+    <p class="text-sm mb-3">{label.credibility.summary}</p>
+    {label.credibility.items && label.credibility.items.length > 0 && (
+      <ul class="pl-5 list-disc space-y-2">
+        {label.credibility.items.map((item) => (
+          <li class="text-sm">
+            <strong>{item.label}:</strong> {item.text}
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+
+  <!-- Övrigt / Jämförelser -->
+  {label.notes.items.length > 0 && (
+    <section class="bg-white border border-[#e0ddd8] rounded-lg p-6 mb-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-[#2e6b3e] mb-3 pb-2 border-b-2 border-[#e8f2eb]">Övrigt</h3>
+      <ul class="pl-5 list-disc space-y-3">
+        {label.notes.items.map((item) => (
+          <li class="text-sm">
+            <strong>{item.label}:</strong> <span set:html={linkifyText(item.text)} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <!-- Cross-links -->
+  {label.crossLinks.length > 0 && (
+    <div class="mt-6">
+      <p class="text-sm font-semibold text-[#5a5a5a] mb-2">Se även:</p>
+      <div class="flex flex-wrap gap-2">
+        {label.crossLinks.map((cl) => (
+          <a
+            href={`/labels/${cl.id}`}
+            class="inline-block text-sm px-3 py-1 rounded-full bg-[#e8f2eb] text-[#2e6b3e] font-medium hover:bg-[#2e6b3e] hover:text-white transition-colors"
+          >
+            {cl.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+</Layout>

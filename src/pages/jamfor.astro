@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro'
+import LabelCompare from '../components/LabelCompare'
+---
+
+<Layout
+  title="Jämför märkningar – Svenska livsmedelsmärkningar"
+  description="Jämför svenska livsmedelsmärkningar sida vid sida. Välj upp till tre märkningar och se skillnader i kategorier, trovärdighet och kontroll."
+  activeNav="jamfor"
+  canonicalPath="/jamfor"
+>
+  <h2 class="text-2xl font-bold text-[#2e6b3e] mb-2">Jämför märkningar</h2>
+  <p class="text-[#5a5a5a] text-sm mb-6">
+    Välj två eller tre märkningar för att jämföra dem sida vid sida.
+  </p>
+
+  <LabelCompare client:load />
+</Layout>
