@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { enumbers } from '../../data/enumbers'
+
+const title = 'E-nummer guide – vad betyder E-numren i livsmedel?'
+const description = 'Lär dig vad E-nummer i livsmedel betyder. Förklaringar av vanliga tillsatser som E621 (MSG), E300 (C-vitamin), E330 (citronsyra), E322 (lecitin) och fler.'
+
+const CATEGORY_STYLES: Record<string, { bg: string; text: string }> = {
+  'Smakförstärkare': { bg: '#fce8d5', text: '#8a4b1a' },
+  'Färgämne': { bg: '#f5e6cc', text: '#7d5a2f' },
+  'Antioxidant': { bg: '#d9edf7', text: '#1a5276' },
+  'Surhetsreglerare': { bg: '#dff0d8', text: '#2d6a1e' },
+  'Emulgator': { bg: '#f0e0f0', text: '#6b2e6b' },
+  'Geleringsmedel': { bg: '#e8f2eb', text: '#2e6b3e' },
+}
+---
+
+<Layout title={title} description={description} activeNav="enummer" canonicalPath="/enummer">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "E-nummer guide",
+    "description": "Guide till vanliga E-nummer och livsmedelstillsatser i Sverige.",
+    "url": "https://markningar.se/enummer",
+    "inLanguage": "sv",
+  })} />
+
+  <h2 class="text-2xl font-bold text-[#2e6b3e] mb-3">E-nummer – livsmedelstillsatser</h2>
+  <p class="mb-6 text-[#5a5a5a]">
+    E-nummer är koder för livsmedelstillsatser som är godkända inom EU. Tillsatserna används för att
+    förbättra smak, utseende, konsistens eller hållbarhet hos livsmedel. Alla E-nummer har
+    godkänts av Europeiska myndigheten för livsmedelssäkerhet (EFSA) innan de tillåts i mat.
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {enumbers.map((e) => {
+      const style = CATEGORY_STYLES[e.category]
+      return (
+        <a
+          href={`/enummer/${e.id}`}
+          class="block bg-white border border-[#e0ddd8] rounded-lg p-5 shadow-sm hover:shadow-md hover:border-[#2e6b3e] transition-all no-underline"
+        >
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xl font-bold text-[#2e6b3e]">{e.number}</span>
+            <span
+              style={style ? `background: ${style.bg}; color: ${style.text}` : ''}
+              class="text-xs font-semibold px-2 py-0.5 rounded-full uppercase tracking-wide"
+            >
+              {e.category}
+            </span>
+          </div>
+          <h3 class="text-base font-semibold text-[#2c2c2c] mb-2">{e.name}</h3>
+          <p class="text-sm text-[#5a5a5a] leading-snug">{e.cardDescription}</p>
+        </a>
+      )
+    })}
+  </div>
+
+  <div class="mt-8 bg-white border border-[#e0ddd8] rounded-lg p-6 shadow-sm">
+    <h3 class="text-base font-semibold text-[#2e6b3e] mb-2">Om E-nummer</h3>
+    <p class="text-sm text-[#5a5a5a] mb-2">
+      Systemet med E-nummer används inom hela EU för att märka ut tillsatser i ingrediensförteckningar.
+      Bokstaven E står för Europa (eller Europeisk). Att ett ämne har ett E-nummer innebär att det
+      har bedömts som säkert av EFSA vid de mängder som är tillåtna.
+    </p>
+    <p class="text-sm text-[#5a5a5a]">
+      Informationen på dessa sidor är hämtad från EFSA:s vetenskapliga yttranden och
+      <a href="https://www.livsmedelsverket.se/livsmedel-och-innehall/tillsatser-e-nummer" target="_blank" rel="noopener noreferrer" class="text-[#2e6b3e] hover:underline">Livsmedelsverkets webbplats</a>.
+    </p>
+  </div>
+</Layout>

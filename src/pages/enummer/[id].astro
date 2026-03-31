@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { enumbers, getENumberById } from '../../data/enumbers'
+import type { ENumber } from '../../data/enumbers'
+
+export function getStaticPaths() {
+  return enumbers.map((e) => ({
+    params: { id: e.id },
+  }))
+}
+
+const { id } = Astro.params
+const enumber = getENumberById(id!) as ENumber
+
+const CATEGORY_STYLES: Record<string, { bg: string; text: string }> = {
+  'Smakförstärkare': { bg: '#fce8d5', text: '#8a4b1a' },
+  'Färgämne': { bg: '#f5e6cc', text: '#7d5a2f' },
+  'Antioxidant': { bg: '#d9edf7', text: '#1a5276' },
+  'Surhetsreglerare': { bg: '#dff0d8', text: '#2d6a1e' },
+  'Emulgator': { bg: '#f0e0f0', text: '#6b2e6b' },
+  'Geleringsmedel': { bg: '#e8f2eb', text: '#2e6b3e' },
+}
+
+const categoryStyle = CATEGORY_STYLES[enumber.category]
+
+const relatedEnumbers = enumbers.filter((e) => enumber.relatedIds.includes(e.id))
+
+const title = `${enumber.number} ${enumber.name} – vad är det och var finns det?`
+const description = enumber.cardDescription
+---
+
+<Layout title={title} description={description} activeNav="enummer" canonicalPath={`/enummer/${enumber.id}`} ogType="article">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": `${enumber.number} ${enumber.name}`,
+    "description": enumber.cardDescription,
+    "url": `https://markningar.se/enummer/${enumber.id}`,
+    "inLanguage": "sv",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Svenska livsmedelsmärkningar",
+      "url": "https://markningar.se"
+    }
+  })} />
+
+  <a href="/enummer" class="inline-block mb-6 text-sm font-medium text-[#2e6b3e] hover:underline">← Alla E-nummer</a>
+
+  <!-- Header -->
+  <div class="mb-8">
+    <div class="flex items-center gap-3 mb-2">
+      <span class="text-4xl font-bold text-[#2e6b3e]">{enumber.number}</span>
+      <span
+        style={categoryStyle ? `background: ${categoryStyle.bg}; color: ${categoryStyle.text}` : ''}
+        class="text-xs font-semibold px-2 py-0.5 rounded-full uppercase tracking-wide"
+      >
+        {enumber.category}
+      </span>
+    </div>
+    <h2 class="text-2xl font-bold text-[#2c2c2c]">{enumber.name}</h2>
+  </div>
+
+  <!-- Beskrivning -->
+  <section class="bg-white border border-[#e0ddd8] rounded-lg p-6 mb-5 shadow-sm">
+    <h3 class="text-lg font-semibold text-[#2e6b3e] mb-3 pb-2 border-b-2 border-[#e8f2eb]">Beskrivning</h3>
+    {enumber.description.map((para) => (
+      <p class="text-sm mb-3 last:mb-0">{para}</p>
+    ))}
+  </section>
+
+  <!-- Förekommer i -->
+  <section class="bg-white border border-[#e0ddd8] rounded-lg p-6 mb-5 shadow-sm">
+    <h3 class="text-lg font-semibold text-[#2e6b3e] mb-3 pb-2 border-b-2 border-[#e8f2eb]">Förekommer vanligen i</h3>
+    <ul class="pl-5 list-disc space-y-1">
+      {enumber.commonlyFoundIn.map((item) => (
+        <li class="text-sm">{item}</li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- EU-status -->
+  <section class="bg-white border border-[#e0ddd8] rounded-lg p-6 mb-5 shadow-sm">
+    <h3 class="text-lg font-semibold text-[#2e6b3e] mb-3 pb-2 border-b-2 border-[#e8f2eb]">EU-status och reglering</h3>
+    <p class="text-sm mb-3">{enumber.euStatus}</p>
+    <p class="text-sm text-[#5a5a5a]"><strong>ADI (acceptabelt dagligt intag):</strong> {enumber.adiInfo}</p>
+  </section>
+
+  <!-- Hälsoaspekter -->
+  {enumber.healthNotes.length > 0 && (
+    <section class="bg-white border border-[#e0ddd8] rounded-lg p-6 mb-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-[#2e6b3e] mb-3 pb-2 border-b-2 border-[#e8f2eb]">Hälsoaspekter</h3>
+      <ul class="pl-5 list-disc space-y-2">
+        {enumber.healthNotes.map((note) => (
+          <li class="text-sm">{note}</li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <!-- Relaterade E-nummer -->
+  {relatedEnumbers.length > 0 && (
+    <div class="mt-6">
+      <p class="text-sm font-semibold text-[#5a5a5a] mb-2">Se även:</p>
+      <div class="flex flex-wrap gap-2">
+        {relatedEnumbers.map((rel) => (
+          <a
+            href={`/enummer/${rel.id}`}
+            class="inline-block text-sm px-3 py-1 rounded-full bg-[#e8f2eb] text-[#2e6b3e] font-medium hover:bg-[#2e6b3e] hover:text-white transition-colors"
+          >
+            {rel.number} {rel.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <div class="mt-8 text-xs text-[#8a8a8a]">
+    Informationen är hämtad från EFSA:s vetenskapliga yttranden och
+    <a href="https://www.livsmedelsverket.se/livsmedel-och-innehall/tillsatser-e-nummer" target="_blank" rel="noopener noreferrer" class="hover:underline">Livsmedelsverket</a>.
+    Den ersätter inte officiella källor.
+  </div>
+</Layout>
