@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://markningar.se/sitemap.xml

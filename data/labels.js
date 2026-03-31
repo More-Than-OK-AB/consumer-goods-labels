@@ -1,1 +1,0 @@
-window.LABELS_DATA = [];

@@ -10,3 +10,9 @@ labels-backlog.txt
 # OS
 .DS_Store
 Thumbs.db
+
+# Astro
+node_modules/
+dist/
+.astro/
+.claude/
