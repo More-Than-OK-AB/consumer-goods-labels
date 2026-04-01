@@ -78,7 +78,7 @@ export default function LabelGrid() {
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Sök märkning..."
         aria-label="Sök märkning"
-        className="w-full px-4 py-2.5 text-base border border-[#e0ddd8] rounded-lg bg-white text-[#2c2c2c] mb-4 focus:outline-none focus:border-[#2e6b3e] focus:ring-2 focus:ring-[#2e6b3e]/20 placeholder:text-[#5a5a5a]"
+        className="w-full px-4 py-2.5 text-base border border-[#e0ddd8] rounded-lg bg-white text-[#2c2c2c] mb-4 focus:outline-none focus:border-[#2e6b3e] focus:ring-2 focus:ring-[#2e6b3e]/40 placeholder:text-[#5a5a5a]"
         style={{ fontFamily: 'inherit' }}
       />
 
