@@ -87,7 +87,7 @@ function linkifyText(text: string): string {
       <p class="text-sm mb-3 last:mb-0" set:html={linkifyText(para)} />
     ))}
     <p class="text-sm mt-3">
-      <a href={label.website} target="_blank" rel="noopener noreferrer" class="text-[#2e6b3e] hover:underline font-medium">
+      <a href={label.website} target="_blank" rel="noopener noreferrer" aria-label={`Officiell webbplats för ${label.name} (öppnas i nytt fönster)`} class="text-[#2e6b3e] hover:underline font-medium">
         Officiell webbplats →
       </a>
     </p>

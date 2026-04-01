@@ -75,7 +75,7 @@ export default function LabelCompare() {
             value={selectedIds[i]}
             onChange={(e) => setSelection(i, e.target.value)}
             aria-label={i < 2 ? `Välj märkning ${i + 1}` : 'Välj en tredje märkning (valfritt)'}
-            className="flex-1 px-3 py-2 text-sm border border-[#e0ddd8] rounded-lg bg-white text-[#2c2c2c] focus:outline-none focus:border-[#2e6b3e] focus:ring-2 focus:ring-[#2e6b3e]/20 cursor-pointer"
+            className="flex-1 px-3 py-2 text-sm border border-[#e0ddd8] rounded-lg bg-white text-[#2c2c2c] focus:outline-none focus:border-[#2e6b3e] focus:ring-2 focus:ring-[#2e6b3e]/40 cursor-pointer"
             style={{ fontFamily: 'inherit' }}
           >
             <option value="">{i < 2 ? 'Välj märkning...' : 'Välj en tredje (valfritt)...'}</option>
