@@ -561,6 +561,10 @@ export const labels: Label[] = [
         text: "KRAV har skärpt regelverket på flera områden: snabbväxande kycklingraser är förbjudna, fiskmjöl i foder fasas ut för grisar och höns, och möjligheten till distansrevisioner har tagits bort – alla kontroller måste nu ske fysiskt på plats."
       },
       {
+        label: "Kyckling och ECC",
+        text: "KRAV-certifierad kyckling uppfyller i praktiken de flesta krav i European Chicken Commitment (ECC), inklusive långsamväxande raser och lägre beläggningsgrad. KRAV går dessutom längre genom att kräva utevistelse och ekologiskt foder. För konsumenter som vill välja kyckling med hög djurvälfärd är KRAV det starkaste alternativet på den svenska marknaden."
+      },
+      {
         label: "Koppar vid import",
         text: "KRAV förbjuder kopparbaserade bekämpningsmedel i svensk odling men har inga strängare regler än EU för importerade produkter. Importerad KRAV-märkt frukt och vin kan därför ha odlats med koppar, som EU tillåter upp till 4 kg per hektar och år."
       }
@@ -568,7 +572,8 @@ export const labels: Label[] = [
   },
   crossLinks: [
     { name: "EU-ekologiskt", id: "eu-ekologiskt" },
-    { name: "Svenskt Sigill", id: "svenskt-sigill" }
+    { name: "Svenskt Sigill", id: "svenskt-sigill" },
+    { name: "Svensk Fågel", id: "svensk-fagel" }
   ]
 },
 {
@@ -861,6 +866,10 @@ export const labels: Label[] = [
       {
         label: "31 kontrollpunkter",
         text: "Djuromsorgsprogrammet omfattar 31 specifika kontrollpunkter som berör daglig omsorg, stallmiljö, foder, vatten och ströbädd."
+      },
+      {
+        label: "Inspektionsmodell",
+        text: "Djurens Rätt har ifrågasatt kontrollernas oberoende och menar att de huvudsakligen bygger på egen- och andrapartskontroll snarare än oberoende tredjepartsrevision."
       }
     ]
   },
@@ -868,11 +877,15 @@ export const labels: Label[] = [
     items: [
       {
         label: "WWF:s köttguide",
-        text: "Konventionell svensk kyckling – det som Svensk Fågels märkning omfattar – fick rött ljus i WWF:s köttguide. Skälet är att WWF kräver långsamväxande raser för godkänd djurvälfärd. Svensk Fågel tillåter snabbväxande raser som kan växa så fort att skelettet inte hänger med, vilket forskare pekar ut som ett av de största djurvälfärdsproblemen inom animalieproduktion. Endast KRAV-märkt och Svenskt Sigill klimatcertifierad kyckling får grönt ljus."
+        text: "Konventionell svensk kyckling – det som Svensk Fågels märkning omfattar – fick rött ljus i WWF:s köttguide. Skälet är att WWF kräver långsamväxande raser för godkänd djurvälfärd. De flesta medlemmar i Svensk Fågel använder rasen Ross 308, en snabbväxande ras som når slaktvikt på bara 35 dagar. Forskning visar att cirka 36 procent av snabbväxande kycklingar drabbas av måttliga till allvarliga gångproblem, jämfört med cirka 10 procent hos långsamväxande raser. Endast KRAV-märkt och Svenskt Sigill klimatcertifierad kyckling får grönt ljus."
       },
       {
         label: "KRAV",
         text: "KRAV-kyckling kräver utevistelse, ekologiskt foder och långsamväxande raser. Svensk Fågel tillåter konventionell uppfödning inomhus med upp till 36 kg per kvadratmeter — ungefär 18 kycklingar på en yta där forskning rekommenderar fem. KRAV-märkt kyckling är det enda alternativet som får grönt ljus i WWF:s köttguide."
+      },
+      {
+        label: "European Chicken Commitment",
+        text: "Djurens Rätt har analyserat Svensk Fågels program mot European Chicken Commitment (ECC) och bedömer att det inte uppfyller standarden. Bland bristerna finns att de flesta medlemmar fortfarande använder snabbväxande raser, att oberoende tredjepartsinspektioner saknas, att bara omkring 1 procent av kycklingarna får utevistelse, samt att det inte finns krav på miljöberikning eller bedövningsmetoder i linje med ECC. Svensk Fågel hävdar att de uppfyller 7 av 9 ECC-kriterier, men Djurens Rätt bestrider det."
       },
       {
         label: "Bristande tillsyn",
